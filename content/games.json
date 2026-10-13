@@ -43,16 +43,109 @@
     ],
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/sprocket-and-sprout/blob/main/PATCHNOTES.md",
-    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art made with PixelLab; sound made procedurally.",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art made with PixelLab; sound made procedurally.",
     "platforms": "Browser (installable as an app), Windows",
     "featured": true
+  },
+  {
+    "id": "arcwarm",
+    "title": "Arcwarm",
+    "repo": "arcwarm",
+    "play": "https://ycgnem.github.io/arcwarm/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "Arena FPS aim warm-up",
+    "session": "2–5 minute duels",
+    "pitch": "A Quake Live lightning-gun duel against a bot, with Halo gravity and shields. The duel is the warm-up.",
+    "number": "LG: 6 dmg every 50 ms = 120 dps",
+    "about": [
+      "A 2–5 minute aim warm-up you play as a game. You and a bot share the same movement and the same lightning gun, so you track while you move and dodge, and the bot's beam punishes predictable movement.",
+      "Halo gravity and air control, Quake Live gun and hitbox numbers. Lifesteal is on by default: every hit heals the shooter, so a fight is decided by who misses more. The bot's aim comes from perception delay and your movement, not dice, across five levels from Easy to Nightmare.",
+      "Two maps: Pinehollow, a forest bowl with a treehouse, a shrine and a man cannon, and the White Room, a plain grid with ramps."
+    ],
+    "controls": [
+      [
+        "Move",
+        "WASD"
+      ],
+      [
+        "Jump (hold to hop)",
+        "Space"
+      ],
+      [
+        "Crouch / crouch-jump",
+        "C"
+      ],
+      [
+        "Fire the beam",
+        "Left mouse"
+      ],
+      [
+        "Scores",
+        "Tab"
+      ],
+      [
+        "360° sensitivity test",
+        "F2"
+      ]
+    ],
+    "notes": "plan",
+    "notesUrl": "https://github.com/ycgNem/arcwarm/blob/main/PLAN.md",
+    "madeWith": "JavaScript and Three.js. Code written with Claude Opus from my design notes.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "overgrowth",
+    "title": "Overgrowth",
+    "repo": "overgrowth",
+    "play": "https://ycgnem.github.io/overgrowth/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "First-person jungle scavenging",
+    "session": "Explore at your own pace",
+    "pitch": "Hack through the undergrowth with a machete and dig through what the jungle swallowed, in an open world that goes on forever.",
+    "number": "18 finds · 5 rarities · 0 image files",
+    "about": [
+      "A first-person, open-world jungle scavenging demo. Hack through the undergrowth with a machete, search scrap heaps, smash crates and urns, climb overgrown temples, and fill your satchel with 18 collectible items across five rarities.",
+      "Everything is procedural: there are no image, model or audio files. Textures are painted in code, plants and props are built from code, and the soundscape is synthesised live. The world is streamed in chunks from one height function, so walking away and back regrows the exact same jungle."
+    ],
+    "controls": [
+      [
+        "Move / sprint",
+        "WASD / Shift"
+      ],
+      [
+        "Jump",
+        "Space"
+      ],
+      [
+        "Swing machete",
+        "Left mouse"
+      ],
+      [
+        "Search (hold)",
+        "E"
+      ],
+      [
+        "Satchel",
+        "Tab / I"
+      ],
+      [
+        "Fast-forward time",
+        "Hold T"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/overgrowth#readme",
+    "madeWith": "JavaScript and Three.js, fully procedural: no image, model or audio files. Code written with Claude Opus.",
+    "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
     "id": "verdant-relay",
     "title": "Verdant Relay",
     "repo": "verdant-relay",
     "play": "https://ycgnem.github.io/verdant-relay/",
-    "status": "playtest",
+    "status": "prototype",
     "version": "0.1",
     "genre": "Scavenge-and-defend roguelite",
     "session": "Up to six nights",
@@ -90,7 +183,7 @@
     ],
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/verdant-relay#readme",
-    "madeWith": "JavaScript and Three.js, rendered as pixel art. Code written with Claude Code from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
+    "madeWith": "JavaScript and Three.js, rendered as pixel art. Code written with Claude Opus from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
     "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
@@ -98,7 +191,7 @@
     "title": "Slipstream Salvager",
     "repo": "slipstream-salvager",
     "play": "https://ycgnem.github.io/slipstream-salvager/",
-    "status": "playable",
+    "status": "prototype",
     "version": "0.3",
     "genre": "Top-down action roguelike",
     "session": "About 15 minutes a run",
@@ -128,7 +221,7 @@
     ],
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
-    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser, Windows"
   },
   {
@@ -136,7 +229,7 @@
     "title": "Last Watt",
     "repo": "last-watt",
     "play": "https://ycgnem.github.io/last-watt/",
-    "status": "playtest",
+    "status": "prototype",
     "version": "0.1",
     "genre": "Tower defense",
     "session": "About 17 minutes a run",
@@ -175,7 +268,7 @@
     ],
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/last-watt#readme",
-    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
@@ -183,7 +276,7 @@
     "title": "Trotline",
     "repo": "trotline",
     "play": "https://ycgnem.github.io/trotline/",
-    "status": "playtest",
+    "status": "prototype",
     "version": "0.1",
     "genre": "Fishing tower defense",
     "session": "A 12-wave season",
@@ -209,7 +302,7 @@
     ],
     "notes": "progress notes",
     "notesUrl": "https://github.com/ycgNem/trotline/blob/main/PROGRESS.md",
-    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser"
   },
   {
@@ -217,7 +310,7 @@
     "title": "Slipstream Salvager 3D",
     "repo": "slipstream-salvager-3d",
     "play": "https://ycgnem.github.io/slipstream-salvager-3d/",
-    "status": "playable",
+    "status": "prototype",
     "version": "0.2",
     "genre": "First-person action roguelike",
     "session": "A run of five yards",
@@ -255,54 +348,8 @@
     ],
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
-    "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Code from my design docs.",
+    "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Opus from my design docs.",
     "platforms": "Browser, Windows"
-  },
-  {
-    "id": "overgrowth",
-    "title": "Overgrowth",
-    "repo": "overgrowth",
-    "play": "https://ycgnem.github.io/overgrowth/",
-    "status": "prototype",
-    "version": "demo",
-    "genre": "First-person jungle scavenging",
-    "session": "Explore at your own pace",
-    "pitch": "Hack through the undergrowth with a machete and dig through what the jungle swallowed, in an open world that goes on forever.",
-    "number": "18 finds · 5 rarities · 0 image files",
-    "about": [
-      "A first-person, open-world jungle scavenging demo. Hack through the undergrowth with a machete, search scrap heaps, smash crates and urns, climb overgrown temples, and fill your satchel with 18 collectible items across five rarities.",
-      "Everything is procedural: there are no image, model or audio files. Textures are painted in code, plants and props are built from code, and the soundscape is synthesised live. The world is streamed in chunks from one height function, so walking away and back regrows the exact same jungle."
-    ],
-    "controls": [
-      [
-        "Move / sprint",
-        "WASD / Shift"
-      ],
-      [
-        "Jump",
-        "Space"
-      ],
-      [
-        "Swing machete",
-        "Left mouse"
-      ],
-      [
-        "Search (hold)",
-        "E"
-      ],
-      [
-        "Satchel",
-        "Tab / I"
-      ],
-      [
-        "Fast-forward time",
-        "Hold T"
-      ]
-    ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/overgrowth#readme",
-    "madeWith": "JavaScript and Three.js, fully procedural: no image, model or audio files. Code written with Claude Code.",
-    "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
     "id": "carpet-joint",
@@ -340,7 +387,7 @@
     ],
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/pegwork#readme",
-    "madeWith": "TypeScript and one 640×360 canvas, deterministic 60 Hz sim. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "madeWith": "TypeScript and one 640×360 canvas, deterministic 60 Hz sim. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser"
   }
 ]

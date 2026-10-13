@@ -183,15 +183,6 @@ p { margin: 0; }
 .workshop div p:last-child { color: var(--ink-2); max-width: 56ch; }
 @media (max-width: 720px) { .workshop { grid-template-columns: 1fr; } }
 
-/* ---------- built in the open ---------- */
-.open-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
-.open-col { display: grid; gap: 12px; align-content: start; padding-top: 18px; border-top: 2px solid var(--line); }
-.open-col.me { border-color: var(--amber); }
-.open-col.ai { border-color: var(--teal); }
-.open-col.you { border-color: var(--violet); }
-.open-col ul { margin: 0; padding-left: 1.1em; color: var(--ink-2); display: grid; gap: 8px; }
-@media (max-width: 860px) { .open-grid { grid-template-columns: 1fr; } }
-
 /* ---------- devlog list ---------- */
 .posts { display: grid; gap: 0; }
 .post-row {
@@ -272,26 +263,10 @@ p { margin: 0; }
 .post-cover { border-radius: 8px; border: 1px solid var(--line); aspect-ratio: 16 / 9; object-fit: cover; width: 100%; image-rendering: pixelated; }
 .post-body { padding-block: 40px 56px; }
 
-/* ---------- process steps (how I build) ---------- */
-.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; counter-reset: step; }
-.steps li { counter-increment: step; display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 20px; padding-block: 22px; border-top: 1px solid var(--line); }
-.steps li::before { content: counter(step); font-family: var(--f-display); font-size: 1.8rem; color: var(--amber); line-height: 1; }
-.steps h3 { margin-bottom: 6px; }
-.steps p { color: var(--ink-2); max-width: 62ch; }
 .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
 @media (max-width: 760px) { .split { grid-template-columns: 1fr; } }
 .panel { background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; padding: 24px; display: grid; gap: 12px; align-content: start; }
 .panel ul { margin: 0; padding-left: 1.1em; color: var(--ink-2); display: grid; gap: 6px; }
-.faq { display: grid; gap: 0; }
-.faq details { border-top: 1px solid var(--line); padding-block: 16px; }
-.faq details:last-child { border-bottom: 1px solid var(--line); }
-.faq summary { cursor: pointer; font-weight: 700; font-size: 1.05rem; }
-.faq details p { color: var(--ink-2); margin-top: 10px; max-width: 66ch; }
-.kit { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
-.kit a { display: grid; place-items: center; gap: 8px; padding: 18px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 6px; color: var(--ink-2); text-decoration: none; font-size: 0.85rem; }
-.kit a:hover { border-color: var(--teal); }
-.kit img { height: 56px; width: auto; image-rendering: pixelated; }
-.kit a.light { background: #fff1d6; color: #1b1424; }
 
 /* ---------- footer ---------- */
 .site-foot { border-top: 1px solid var(--line); padding-block: 40px; color: var(--ink-3); font-size: 0.9rem; }

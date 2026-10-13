@@ -140,7 +140,7 @@ def chip(status):
 
 def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="website"):
     full_title = f"{title} · ycgNem" if title != "ycgNem" else "ycgNem — free browser games, built in the open"
-    nav = [("/#games", "Games"), ("/devlog/", "Devlog"), ("/how-i-build/", "How I build"), ("/community/", "Community")]
+    nav = [("/#games", "Games"), ("/devlog/", "Devlog"), ("/community/", "Community")]
     nav_html = "".join(
         f'<a href="{h}"{" aria-current=\"page\"" if path.startswith(h) and h != "/#games" else ""}>{t}</a>'
         for h, t in nav)
@@ -188,10 +188,10 @@ def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="we
   <div class="wrap">
     <img src="/assets/brand/ycgnem-wordmark.svg" alt="ycgNem" width="95" height="22">
     <nav aria-label="Footer">
-      <a href="/devlog/">Devlog</a><a href="/how-i-build/">How I build</a><a href="/community/">Community</a>
+      <a href="/devlog/">Devlog</a><a href="/community/">Community</a>
       <a href="/feed.xml">RSS</a><a href="{e(SITE['socials']['github'])}">GitHub</a>
     </nav>
-    <p>Free games, public code, no ads, no trackers. © <span data-year>{date.today().year}</span> ycgNem</p>
+    <p>Built with Claude Opus. Free games, public code, no ads, no trackers. © <span data-year>{date.today().year}</span> ycgNem</p>
   </div>
 </footer>
 <script src="/assets/js/site.js" defer></script>
@@ -260,10 +260,10 @@ def page_index(posts, updated):
     <div class="hero-copy">
       <p class="eyebrow">Solo dev · {len(GAMES)} games · free in your browser</p>
       <h1>Play it now. See how it's made.</h1>
-      <p class="lede">I'm ycgNem, a gamer making the games I want to play, with AI on the crew. Every game here is free in your browser. Every repo is public, every number is on screen, and I'll tell you exactly what the AI did.</p>
+      <p class="lede">I'm ycgNem, a gamer making the games I want to play, built with Claude Opus. Every game here is free in your browser, and every repo is public.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="/games/{featured['id']}/#play">{PLAY_ICON}Play {e(featured['title'])}</a>
-        <a class="btn btn-ghost" href="/how-i-build/">How I build with AI</a>
+        <a class="btn btn-ghost" href="{e(SITE['socials']['github'])}">Source on GitHub</a>
       </div>
       <ul class="proof">
         <li><b>{len(playable)}</b> playable now</li>
@@ -289,31 +289,6 @@ def page_index(posts, updated):
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap">
-    <div class="band-head">
-      <div><p class="eyebrow">Built in the open</p><h2>Who does what</h2></div>
-      <a class="btn btn-ghost btn-sm" href="/how-i-build/">The full process</a>
-    </div>
-    <div class="open-grid">
-      <div class="open-col me"><h3>What I do</h3><ul>
-        <li>Decide what the game is and why it's fun</li>
-        <li>Write the design docs: the loop, the numbers, the feel</li>
-        <li>Play every build and say what stays</li>
-        <li>Own every decision and every number</li></ul></div>
-      <div class="open-col ai"><h3>What the AI does</h3><ul>
-        <li>Claude Code writes most of the code, milestone by milestone</li>
-        <li>PixelLab and Claude make much of the pixel art</li>
-        <li>Runs the tests and balance sims I ask for</li>
-        <li>Each game page lists exactly which tools it used</li></ul></div>
-      <div class="open-col you"><h3>What you can check</h3><ul>
-        <li>Every repo is public, design docs included</li>
-        <li>Every update ships with patch notes</li>
-        <li>Odds, damage and rates are shown in game</li>
-        <li>Feedback gets a reply</li></ul></div>
-    </div>
-  </div>
-</section>
 
 <section class="band">
   <div class="wrap">
@@ -436,73 +411,6 @@ def page_post(p):
     return layout(f"/devlog/{p['slug']}/", p["title"], p["summary"], body, p["cover"], "article")
 
 
-def page_how():
-    body = """
-<div class="wrap">
-  <header class="post-head">
-    <p class="eyebrow">How I build</p>
-    <h1>Made with AI, shown in the open</h1>
-    <p class="lede">A lot of people are tired of AI being used to fake effort. Fair. So here's exactly how my games get made, and how you can check every claim.</p>
-  </header>
-
-  <section class="band" style="padding-top:24px">
-    <h2 style="margin-bottom:20px">The process</h2>
-    <ol class="steps">
-      <li><div><h3>A design doc first</h3><p>Every game starts as a written plan: what the player does every minute, what should feel good, and the math behind it. Damage, odds and rates are derived on paper before any code exists. The docs live in each repo.</p></div></li>
-      <li><div><h3>Built in milestones</h3><p>Claude Code builds one milestone at a time from those docs: a foundation, a playable slice, then content. Each milestone has a gate it must pass before the next one starts.</p></div></li>
-      <li><div><h3>I play it and decide</h3><p>I play every build. What stays, what gets cut and what feels wrong are my calls, and every big one is written down in the repo's DECISIONS.md with the reason.</p></div></li>
-      <li><div><h3>Measured, not guessed</h3><p>Balance gets checked with simulations. Trotline's season was played by a reference strategy hundreds of times and resized when it won too often. Carpet Joint replays the night 500 times to show you the odds.</p></div></li>
-      <li><div><h3>Shipped with notes</h3><p>Every update goes live in the browser for free, with patch notes saying what changed and what's still weak.</p></div></li>
-    </ol>
-  </section>
-
-  <section class="band">
-    <div class="split">
-      <div class="panel" style="border-color:var(--teal)">
-        <h3>The tools</h3>
-        <ul>
-          <li><strong>Claude Code</strong> (Anthropic) writes most of the code</li>
-          <li><strong>PixelLab</strong> generates much of the pixel art</li>
-          <li><strong>Claude</strong> also draws sprites pixel by pixel in Python scripts</li>
-          <li><strong>TypeScript, Canvas, Three.js, Vite</strong>: no game engine</li>
-          <li><strong>GitHub Pages</strong> hosts every game for free</li>
-        </ul>
-      </div>
-      <div class="panel" style="border-color:var(--amber)">
-        <h3>What stays human</h3>
-        <ul>
-          <li>The ideas, and the taste that picks between them</li>
-          <li>The numbers and why they're those numbers</li>
-          <li>Every playtest and every keep-or-cut call</li>
-          <li>The replies when you leave feedback</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="band">
-    <h2 style="margin-bottom:20px">Questions people ask</h2>
-    <div class="faq">
-      <details><summary>Isn't this just AI slop?</summary><p>Slop is stuff nobody played before shipping. Play one of these for ten minutes and judge for yourself. The design docs, the decisions and the playtesting are the work, and you can read all of it in the repos.</p></details>
-      <details><summary>Did you write the code?</summary><p>Mostly no. Claude Code writes most of it from my docs and my feedback. I'm not going to claim otherwise.</p></details>
-      <details><summary>Is the art AI?</summary><p>Much of it, yes. Each game page says how its art was made. Some sprites come from PixelLab; some are drawn pixel by pixel by Claude in a script.</p></details>
-      <details><summary>Why are the games free?</summary><p>Because I'd rather have players than a price tag right now. If a game earns a bigger version later, the browser version stays free.</p></details>
-      <details><summary>Can I use your code?</summary><p>Every repo is public on GitHub so you can read how it works. Check each repo for its license before reusing anything.</p></details>
-    </div>
-  </section>
-
-  <section class="band">
-    <h2 style="margin-bottom:12px">Press kit</h2>
-    <p class="muted" style="margin-bottom:20px">Logos for anyone writing about the games. Screenshots are on each game page.</p>
-    <div class="kit">
-      <a href="/assets/brand/ycgnem-lockup.svg"><img src="/assets/brand/ycgnem-lockup.svg" alt="">Lockup (SVG)</a>
-      <a class="light" href="/assets/brand/ycgnem-lockup-dark.svg"><img src="/assets/brand/ycgnem-lockup-dark.svg" alt="">On light (SVG)</a>
-      <a href="/assets/brand/ycgnem-icon.svg"><img src="/assets/brand/ycgnem-icon.svg" alt="">Icon (SVG)</a>
-      <a href="/assets/brand/avatar-1024.png"><img src="/assets/brand/avatar-1024.png" alt="">Avatar (PNG)</a>
-    </div>
-  </section>
-</div>"""
-    return layout("/how-i-build/", "How I build", "Exactly how ycgNem's games get made with AI, and how to check every claim.", body)
 
 
 def page_community():
@@ -595,11 +503,10 @@ def main():
     write("devlog/index.html", page_devlog(posts))
     for p in posts:
         write(f"devlog/{p['slug']}/index.html", page_post(p))
-    write("how-i-build/index.html", page_how())
     write("community/index.html", page_community())
     write("404.html", page_404())
     write("feed.xml", feed(posts))
-    urls = ["/", "/devlog/", "/how-i-build/", "/community/"] + [f"/games/{g['id']}/" for g in GAMES] + [f"/devlog/{p['slug']}/" for p in posts]
+    urls = ["/", "/devlog/", "/community/"] + [f"/games/{g['id']}/" for g in GAMES] + [f"/devlog/{p['slug']}/" for p in posts]
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{BASE}{u}</loc></url>" for u in urls) + "</urlset>\n")
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
