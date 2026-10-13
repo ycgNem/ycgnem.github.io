@@ -1,0 +1,346 @@
+[
+  {
+    "id": "sprocket-and-sprout",
+    "title": "Sprocket & Sprout",
+    "repo": "sprocket-and-sprout",
+    "play": "https://ycgnem.github.io/sprocket-and-sprout/",
+    "status": "released",
+    "version": "2.0",
+    "genre": "Cozy farm-factory",
+    "session": "Open-ended, saves in your browser",
+    "pitch": "Take over an old keeper's clockwork farm and bring it back machine by machine, until it runs itself like a music box.",
+    "number": "v0.9 → 2.0 \"The Works\"",
+    "about": [
+      "You arrive in the valley town of Thistlewick to take over the old keeper's clockwork farm. The works stand rusted around one preserving crock still bubbling on its last beans. Bring them back machine by machine: within minutes an arm you restored is carrying pickles to the shipping crate, a gleaner picks the field you planted, and the keeper's water wheel turns the grist mill by the river.",
+      "Every machine tells you what it is doing and why it stopped, so a stuck line is a puzzle you can solve instead of a mystery. The town is your customer: fill its orders, rank up with each business, and bring back the mill, the waterworks, the street lamps, the tram and the clock.",
+      "Hand farming is still here whenever you want it, and the morning summary names yesterday's biggest bottleneck."
+    ],
+    "controls": [
+      [
+        "Move",
+        "WASD / arrows"
+      ],
+      [
+        "Use tool, place",
+        "Left mouse"
+      ],
+      [
+        "Talk, harvest, collect",
+        "Right mouse or F"
+      ],
+      [
+        "Machine window",
+        "Shift+F"
+      ],
+      [
+        "Inspect a line",
+        "Hold I"
+      ],
+      [
+        "Undo placement",
+        "Ctrl+Z"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/sprocket-and-sprout/blob/main/PATCHNOTES.md",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art made with PixelLab; sound made procedurally.",
+    "platforms": "Browser (installable as an app), Windows",
+    "featured": true
+  },
+  {
+    "id": "verdant-relay",
+    "title": "Verdant Relay",
+    "repo": "verdant-relay",
+    "play": "https://ycgnem.github.io/verdant-relay/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "Scavenge-and-defend roguelite",
+    "session": "Up to six nights",
+    "pitch": "Scavenge by day. Hold the line by night. Loot an overgrown city, then defend the Relay with what you brought home.",
+    "number": "6 nights · loot only counts if you extract",
+    "about": [
+      "You are a scavenger supplying Verdant Relay, a power-and-comms hub built into an overgrown transit station. By day you head out into a district: finish its objective, grab loot, then hold E in the extraction zone. Loot only counts if you get out.",
+      "By night you defend the Relay. Build towers on glowing pads, read the wave preview, and spend Intel to decrypt or sabotage what's coming. Survive six nights; the Canopy Colossus attacks on the last one. Research Data from every run buys permanent unlocks."
+    ],
+    "controls": [
+      [
+        "Move / aim",
+        "WASD / mouse"
+      ],
+      [
+        "Fire / melee",
+        "Left / right mouse"
+      ],
+      [
+        "Dodge",
+        "Space"
+      ],
+      [
+        "Interact (hold)",
+        "E"
+      ],
+      [
+        "Build at night",
+        "Click a pad, or 1–6"
+      ],
+      [
+        "Start wave",
+        "Space"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/verdant-relay#readme",
+    "madeWith": "JavaScript and Three.js, rendered as pixel art. Code written with Claude Code from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
+    "platforms": "Browser (desktop, keyboard and mouse)"
+  },
+  {
+    "id": "slipstream-salvager",
+    "title": "Slipstream Salvager",
+    "repo": "slipstream-salvager",
+    "play": "https://ycgnem.github.io/slipstream-salvager/",
+    "status": "playable",
+    "version": "0.3",
+    "genre": "Top-down action roguelike",
+    "session": "About 15 minutes a run",
+    "pitch": "A small, fast scrap robot rips parts off enemies at full speed and bolts them onto itself. Your movement is your weapon.",
+    "number": "only full-speed hits do damage",
+    "about": [
+      "Six yards, about fifteen minutes, ending in a boss, The Compactor, that you take apart one move at a time. Only a hit at full speed does damage, and every part you tear off and bolt on changes how you move and attack: a Booster's Burn, Grip Treads that power-slide, Jump Jets, Springs, a Plow, Jaws.",
+      "You pick your route by driving out through exit gates whose signs show what you can salvage there. Three chassis to unlock by playing, two run modifiers, and a daily run with one seed a day that is the same for everyone."
+    ],
+    "controls": [
+      [
+        "Steer",
+        "WASD / arrows"
+      ],
+      [
+        "Rip (hold with a Booster)",
+        "Space / J"
+      ],
+      [
+        "Bolt on",
+        "E / K"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "platforms": "Browser, Windows"
+  },
+  {
+    "id": "last-watt",
+    "title": "Last Watt",
+    "repo": "last-watt",
+    "play": "https://ycgnem.github.io/last-watt/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "Tower defense",
+    "session": "About 17 minutes a run",
+    "pitch": "A tower defense where energy is a live flow. Your towers are lights, and they fire on watts, not ammo.",
+    "number": "12 kW Lamp → 6 kJ/s, if the grid can feed it",
+    "about": [
+      "An enemy's health is in kJ, and a Lamp drawing 12 kW does 6 kJ/s only if the grid can feed it. Build more towers than your Burners can run and the whole wall slows down together. Keep the Hearth lit for 12 waves, then see how long it lasts in endless.",
+      "Four maps, six towers with branching upgrades, and seven enemies that each hit the grid a different way: Shades cut Nodes, Snuffers put out Burners, Siphons drink from your lines. Each Node carries at most 60 kW, so where the power goes is a decision.",
+      "This one is a work in progress, built to find out whether the idea is fun. What you felt matters more than bugs."
+    ],
+    "controls": [
+      [
+        "Pick a tower",
+        "1–6"
+      ],
+      [
+        "Pick a power building",
+        "7 8 9 0 - ="
+      ],
+      [
+        "Place / select",
+        "Click"
+      ],
+      [
+        "Next wave now",
+        "Space"
+      ],
+      [
+        "Overcharge a tower",
+        "E"
+      ],
+      [
+        "Every key, in game",
+        "H"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/last-watt#readme",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "trotline",
+    "title": "Trotline",
+    "repo": "trotline",
+    "play": "https://ycgnem.github.io/trotline/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "Fishing tower defense",
+    "session": "A 12-wave season",
+    "pitch": "You don't buy towers here. You catch them. Fish from the dock, then sell each catch or put it in the water to guard the smokehouse.",
+    "number": "catch rate = zone × habitat × bait × reel",
+    "about": [
+      "Thieves walk the road toward your smokehouse. Your defenders are what you pull out of the water: fish from the dock, then sell each catch or deploy it to guard the shore. Bait lures pull fish in, chum draws gulls and bears out where your rays can reach them.",
+      "A season is 12 waves. Send boats (a rowboat, a skiff and a trawler) to fish where you point them and bring the catch back to the live well. Every catch rate comes from one formula you can read: the zone, where the line sits, the bait, and the reel."
+    ],
+    "controls": [
+      [
+        "Cast / place",
+        "Click"
+      ],
+      [
+        "Build menu",
+        "B"
+      ],
+      [
+        "Help and keys",
+        "/"
+      ]
+    ],
+    "notes": "progress notes",
+    "notesUrl": "https://github.com/ycgNem/trotline/blob/main/PROGRESS.md",
+    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "platforms": "Browser"
+  },
+  {
+    "id": "slipstream-salvager-3d",
+    "title": "Slipstream Salvager 3D",
+    "repo": "slipstream-salvager-3d",
+    "play": "https://ycgnem.github.io/slipstream-salvager-3d/",
+    "status": "playable",
+    "version": "0.2",
+    "genre": "First-person action roguelike",
+    "session": "A run of five yards",
+    "pitch": "The same rules as Slipstream Salvager, seen from inside the little scrap robot. Speed is the weapon, and here you feel it.",
+    "number": "claw glows teal = full speed",
+    "about": [
+      "The first-person version of Slipstream Salvager. Same rules, same scrapyards, same Rammers and Snappers. Only a hit at full speed (the claw glows teal) does damage. Hit an enemy where its part sits to tear it off, tow it behind you, bolt it on, and you move the way it did.",
+      "A Rammer's Booster turns your attack into its charge, a Snapper's Grip Treads let you power-slide round, a Plow makes your front a ram, Jaws bite on and sling you back out. Clear a yard, then drive out through the exit whose sign shows the part you want."
+    ],
+    "controls": [
+      [
+        "Steer",
+        "Mouse or A/D (click the view first)"
+      ],
+      [
+        "Thrust / brake",
+        "W / S"
+      ],
+      [
+        "Rip",
+        "Click or Space"
+      ],
+      [
+        "Bolt on",
+        "E"
+      ],
+      [
+        "Look back",
+        "Q"
+      ],
+      [
+        "Gamepad",
+        "Supported"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
+    "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Code from my design docs.",
+    "platforms": "Browser, Windows"
+  },
+  {
+    "id": "overgrowth",
+    "title": "Overgrowth",
+    "repo": "overgrowth",
+    "play": "https://ycgnem.github.io/overgrowth/",
+    "status": "prototype",
+    "version": "demo",
+    "genre": "First-person jungle scavenging",
+    "session": "Explore at your own pace",
+    "pitch": "Hack through the undergrowth with a machete and dig through what the jungle swallowed, in an open world that goes on forever.",
+    "number": "18 finds · 5 rarities · 0 image files",
+    "about": [
+      "A first-person, open-world jungle scavenging demo. Hack through the undergrowth with a machete, search scrap heaps, smash crates and urns, climb overgrown temples, and fill your satchel with 18 collectible items across five rarities.",
+      "Everything is procedural: there are no image, model or audio files. Textures are painted in code, plants and props are built from code, and the soundscape is synthesised live. The world is streamed in chunks from one height function, so walking away and back regrows the exact same jungle."
+    ],
+    "controls": [
+      [
+        "Move / sprint",
+        "WASD / Shift"
+      ],
+      [
+        "Jump",
+        "Space"
+      ],
+      [
+        "Swing machete",
+        "Left mouse"
+      ],
+      [
+        "Search (hold)",
+        "E"
+      ],
+      [
+        "Satchel",
+        "Tab / I"
+      ],
+      [
+        "Fast-forward time",
+        "Hold T"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/overgrowth#readme",
+    "madeWith": "JavaScript and Three.js, fully procedural: no image, model or audio files. Code written with Claude Code.",
+    "platforms": "Browser (desktop, keyboard and mouse)"
+  },
+  {
+    "id": "carpet-joint",
+    "title": "Carpet Joint",
+    "repo": "pegwork",
+    "play": "https://ycgnem.github.io/pegwork/",
+    "status": "prototype",
+    "version": "M0",
+    "genre": "Casino management roguelike",
+    "session": "A night on the strip",
+    "pitch": "Run the house on a neon 1970s strip. Write your own games' odds, work the floor live, and survive the swings, because the house doesn't always win.",
+    "number": "Hi-Lo: 16.7% house edge, on screen",
+    "about": [
+      "You run the house. Click a table to see its paytable with every bet's exact house edge and hit rate, and change what a bet pays. The cage panel shows the Sweat: the chance the cage runs dry before 6am, from replaying the rest of tonight 500 times with the real paytables.",
+      "Right now this is the debug floor: a sawdust joint with two tables and a night's crowd walking in. Send in a whale and watch the Sweat move.",
+      "No real money, ever."
+    ],
+    "controls": [
+      [
+        "Open a table",
+        "Click it"
+      ],
+      [
+        "Change a payout",
+        "- / +"
+      ],
+      [
+        "Pause",
+        "Space"
+      ],
+      [
+        "Speed",
+        "1 / 2"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/pegwork#readme",
+    "madeWith": "TypeScript and one 640×360 canvas, deterministic 60 Hz sim. Code written with Claude Code from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "platforms": "Browser"
+  }
+]

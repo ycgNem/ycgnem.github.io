@@ -1,0 +1,25 @@
+{
+  "name": "ycgNem",
+  "url": "https://ycgnem.github.io",
+  "tagline": "Play it now. See how it's made.",
+  "description": "ycgNem makes free browser games with AI and shows the whole process: every repo public, every number on screen, every patch noted.",
+  "_socials_help": "Paste each profile URL once the account exists. Empty ones are hidden on the site.",
+  "socials": {
+    "discord": "",
+    "youtube": "",
+    "tiktok": "",
+    "x": "",
+    "bluesky": "",
+    "instagram": "",
+    "itch": "",
+    "reddit": "",
+    "github": "https://github.com/ycgNem"
+  },
+  "_giscus_help": "Comments on game pages and devlog posts. Fill these from https://giscus.app after enabling Discussions on this repo (see SETUP.md). Leave repoId empty to hide comments.",
+  "giscus": {
+    "repo": "ycgNem/ycgnem.github.io",
+    "repoId": "",
+    "category": "Comments",
+    "categoryId": ""
+  }
+}
