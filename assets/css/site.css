@@ -171,6 +171,11 @@ p { margin: 0; }
 .card .genre { font-size: 0.9rem; color: var(--ink-3); margin-top: -6px; }
 .card .pitch { color: var(--ink-2); font-size: 0.98rem; }
 .card-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+@media (min-width: 1160px) {
+  .card.feature { grid-column: span 2; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); grid-template-rows: none; }
+  .card.feature .card-img { aspect-ratio: auto; height: 100%; }
+  .card.feature .card-body { align-content: center; padding: 28px; }
+}
 
 .workshop {
   display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 28px; align-items: center;

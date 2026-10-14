@@ -5,15 +5,16 @@
     "repo": "sprocket-and-sprout",
     "play": "https://ycgnem.github.io/sprocket-and-sprout/",
     "status": "released",
-    "version": "2.0",
+    "version": "2.1",
     "genre": "Cozy farm-factory",
     "session": "Open-ended, saves in your browser",
     "pitch": "Take over an old keeper's clockwork farm and bring it back machine by machine, until it runs itself like a music box.",
-    "number": "v0.9 → 2.0 \"The Works\"",
+    "number": "2.1 \"Overseas\": a merchant ship buys your exports",
     "about": [
       "You arrive in the valley town of Thistlewick to take over the old keeper's clockwork farm. The works stand rusted around one preserving crock still bubbling on its last beans. Bring them back machine by machine: within minutes an arm you restored is carrying pickles to the shipping crate, a gleaner picks the field you planted, and the keeper's water wheel turns the grist mill by the river.",
       "Every machine tells you what it is doing and why it stopped, so a stuck line is a puzzle you can solve instead of a mystery. The town is your customer: fill its orders, rank up with each business, and bring back the mill, the waterworks, the street lamps, the tram and the clock.",
-      "Hand farming is still here whenever you want it, and the morning summary names yesterday's biggest bottleneck."
+      "Hand farming is still here whenever you want it, and the morning summary names yesterday's biggest bottleneck.",
+      "2.1, \"Overseas\", opens the Harbor: late in the game a merchant ship, the Copper Gull, calls at the beach pier with a manifest from a port across the sea, asking for goods in amounts only a factory can make, like 300 iron bars or 2,000 glass. Fill it and climb six ranks, from Dockhand to Merchant Prince."
     ],
     "controls": [
       [
@@ -44,7 +45,7 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/sprocket-and-sprout/blob/main/PATCHNOTES.md",
     "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art made with PixelLab; sound made procedurally.",
-    "platforms": "Browser (installable as an app), Windows",
+    "platforms": "Browser (installable as an app), Windows installer",
     "featured": true
   },
   {
@@ -100,14 +101,15 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "0.1",
-    "genre": "First-person jungle scavenging",
-    "session": "Explore at your own pace",
-    "pitch": "Hack through the undergrowth with a machete and dig through what the jungle swallowed, in an open world that goes on forever.",
-    "number": "18 finds · 5 rarities · 0 image files",
+    "version": "0.5",
+    "genre": "First-person gather, craft and defend",
+    "session": "A 10-night run, saves every morning",
+    "pitch": "Strip the jungle by day. Hold the Heartwood by night. Gather, craft towers and traps, and survive until night 10.",
+    "number": "10 nights · a boss every 5th night",
     "about": [
-      "A first-person, open-world jungle scavenging demo. Hack through the undergrowth with a machete, search scrap heaps, smash crates and urns, climb overgrown temples, and fill your satchel with 18 collectible items across five rarities.",
-      "Everything is procedural: there are no image, model or audio files. Textures are painted in code, plants and props are built from code, and the soundscape is synthesised live. The world is streamed in chunks from one height function, so walking away and back regrows the exact same jungle."
+      "By day you hack through the jungle with a machete, forage the forest floor, harvest trees and rocks, and scavenge old camps, wrecks and temples. In your satchel you craft what you found into towers, barricades and traps, and build them around the Heartwood, the glowing shrine at your camp.",
+      "At dusk the Blight crawls out of rifts in the forest and follows the terrain to the Heart. Hold it until dawn. Each night is harder than the last, every fifth night brings a boss, and holding through night 10 wins the run. Endless mode keeps going after that.",
+      "0.5, \"Sharp Edges\", brought a new machete in a gloved hand, swings that leave notches in the bark, and a forest floor with real variety."
     ],
     "controls": [
       [
@@ -119,26 +121,77 @@
         "Space"
       ],
       [
-        "Swing machete",
+        "Swing, draw the sling, place",
         "Left mouse"
       ],
       [
-        "Search (hold)",
+        "Gather, search, upgrade",
         "E"
       ],
       [
-        "Satchel",
-        "Tab / I"
+        "Satchel and crafting",
+        "Tab"
       ],
       [
-        "Fast-forward time",
+        "Belt slots",
+        "1–8 or wheel"
+      ],
+      [
+        "Skip daylight",
         "Hold T"
       ]
     ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/overgrowth#readme",
-    "madeWith": "JavaScript and Three.js, fully procedural: no image, model or audio files. Code written with Claude Opus.",
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/overgrowth/blob/main/CHANGELOG.md",
+    "madeWith": "JavaScript and Three.js. Code written with Claude Opus; surfaces and foliage generated with Flux, the hero models built in Blender from Python scripts, and the sound synthesized live.",
     "platforms": "Browser (desktop, keyboard and mouse)"
+  },
+  {
+    "id": "pixel-rts",
+    "title": "Pixel RTS",
+    "repo": "pixel-rts",
+    "play": "https://ycgnem.github.io/pixel-rts/",
+    "status": "prototype",
+    "version": "early",
+    "genre": "Real-time strategy",
+    "session": "Skirmish or online, 1–6 players",
+    "pitch": "Mine ore, pump oil, build armies and capture cities. Win by conquest, by science, or by holding the map. Up to six players online, nothing to install.",
+    "number": "29 techs · 4 eras · 1–6 players",
+    "about": [
+      "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
+      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea.",
+      "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players can start with Boot Camp."
+    ],
+    "controls": [
+      [
+        "Select / box-select",
+        "Left click / drag"
+      ],
+      [
+        "Smart order",
+        "Right click"
+      ],
+      [
+        "Attack-move / stop / hold",
+        "A / S / H"
+      ],
+      [
+        "Control groups",
+        "Ctrl+1–9, then 1–9"
+      ],
+      [
+        "Build menu (Builder selected)",
+        "B"
+      ],
+      [
+        "Pan / zoom",
+        "Arrows or edges / wheel"
+      ]
+    ],
+    "notes": "plan",
+    "notesUrl": "https://github.com/ycgNem/pixel-rts/blob/main/docs/PLAN.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine; online play is peer to peer over WebRTC. Code written with Claude Opus from my design docs; pixel art from PixelLab.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
     "id": "verdant-relay",

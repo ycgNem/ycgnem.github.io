@@ -216,15 +216,20 @@ def giscus(term):
 
 # ---------------------------------------------------------------- pages
 
+def ver(g):
+    v = g["version"]
+    return e(f"v{v}" if v[:1].isdigit() else v)
+
+
 def card(g, updated):
     href = f"/games/{g['id']}/"
     play = (f'<a class="btn btn-primary btn-sm" href="{href}#play">{PLAY_ICON}Play</a>' if g["play"]
             else '<span class="btn btn-ghost btn-sm" aria-disabled="true">Coming soon</span>')
     upd = f' · updated {nice_date(updated[g["id"]])}' if g["id"] in updated else ""
-    return f"""<article class="card">
+    return f"""<article class="card{" feature" if g.get("featured") else ""}">
   <a class="card-img" href="{href}" tabindex="-1"><img src="/assets/games/{g['id']}/cover-640.webp" alt="{e(g['title'])} screenshot" loading="lazy" width="640" height="360">{chip(g['status'])}</a>
   <div class="card-body">
-    <div class="card-title"><h3><a href="{href}">{e(g['title'])}</a></h3><span class="ver">v{e(g['version'])}</span></div>
+    <div class="card-title"><h3><a href="{href}">{e(g['title'])}</a></h3><span class="ver">{ver(g)}</span></div>
     <p class="genre">{e(g['genre'])}{upd}</p>
     <p class="pitch">{e(g['pitch'])}</p>
     <p class="stat">{e(g['number'])}</p>
@@ -360,7 +365,7 @@ def page_game(g, updated, posts):
     </div>
     <aside class="facts">
       <dl>
-        <div><dt>Status</dt><dd>{STATUS[g['status']]} · <span class="mono">v{e(g['version'])}</span></dd></div>
+        <div><dt>Status</dt><dd>{STATUS[g['status']]} · <span class="mono">{ver(g)}</span></dd></div>
         <div><dt>Session</dt><dd>{e(g['session'])}</dd></div>
         <div><dt>Plays on</dt><dd>{e(g['platforms'])}</dd></div>
         {upd}
