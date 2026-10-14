@@ -101,15 +101,15 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "0.5",
+    "version": "0.7",
     "genre": "First-person gather, craft and defend",
     "session": "A 10-night run, saves every morning",
     "pitch": "Strip the jungle by day. Hold the Heartwood by night. Gather, craft towers and traps, and survive until night 10.",
-    "number": "10 nights · a boss every 5th night",
+    "number": "3 difficulties · 10 nights · a boss every 5th",
     "about": [
       "By day you hack through the jungle with a machete, forage the forest floor, harvest trees and rocks, and scavenge old camps, wrecks and temples. In your satchel you craft what you found into towers, barricades and traps, and build them around the Heartwood, the glowing shrine at your camp.",
       "At dusk the Blight crawls out of rifts in the forest and follows the terrain to the Heart. Hold it until dawn. Each night is harder than the last, every fifth night brings a boss, and holding through night 10 wins the run. Endless mode keeps going after that.",
-      "0.5, \"Sharp Edges\", brought a new machete in a gloved hand, swings that leave notches in the bark, and a forest floor with real variety."
+      "0.6 added Blight Blooms: pods that sprout in the forest each dawn and open a new lane onto the Heart at dusk unless you cut them down, so every day is a choice between hunting and building. 0.7 gave it a cinematic title screen, three difficulties from Verdant to Blightborn, a Field Guide and lifetime records."
     ],
     "controls": [
       [
@@ -139,6 +139,10 @@
       [
         "Skip daylight",
         "Hold T"
+      ],
+      [
+        "Pause menu",
+        "Esc"
       ]
     ],
     "notes": "patch notes",
@@ -151,7 +155,7 @@
     "title": "Pixel RTS",
     "repo": "pixel-rts",
     "play": "https://ycgnem.github.io/pixel-rts/",
-    "status": "prototype",
+    "status": "playtest",
     "version": "early",
     "genre": "Real-time strategy",
     "session": "Skirmish or online, 1–6 players",
@@ -185,7 +189,7 @@
       ],
       [
         "Pan / zoom",
-        "Arrows or edges / wheel"
+        "WASD, arrows or edges / wheel"
       ]
     ],
     "notes": "plan",
@@ -198,7 +202,7 @@
     "title": "Verdant Relay",
     "repo": "verdant-relay",
     "play": "https://ycgnem.github.io/verdant-relay/",
-    "status": "prototype",
+    "status": "playtest",
     "version": "0.1",
     "genre": "Scavenge-and-defend roguelite",
     "session": "Up to six nights",

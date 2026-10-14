@@ -124,7 +124,7 @@ def load_posts():
             meta[k.strip()] = v.strip().strip('"')
         slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", f.stem)
         posts.append({**meta, "slug": slug, "body": md(m.group(2))})
-    posts.sort(key=lambda p: p["date"], reverse=True)
+    posts.sort(key=lambda p: (p["date"], p.get("time", "")), reverse=True)
     return posts
 
 

@@ -1,6 +1,7 @@
 ---
 title: "New: Pixel RTS, and Overgrowth 0.5"
 date: 2026-10-14
+time: "12:00"
 summary: A pixel-art RTS you can play online with up to six friends, and Overgrowth becomes a gather, craft and defend game with a real machete.
 cover: /assets/games/pixel-rts/cover.webp
 game: pixel-rts
