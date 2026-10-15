@@ -101,7 +101,7 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "0.7",
+    "version": "0.8 preview",
     "genre": "First-person gather, craft and defend",
     "session": "A 10-night run, saves every morning",
     "pitch": "Strip the jungle by day. Hold the Heartwood by night. Gather, craft towers and traps, and survive until night 10.",
@@ -109,7 +109,8 @@
     "about": [
       "By day you hack through the jungle with a machete, forage the forest floor, harvest trees and rocks, and scavenge old camps, wrecks and temples. In your satchel you craft what you found into towers, barricades and traps, and build them around the Heartwood, the glowing shrine at your camp.",
       "At dusk the Blight crawls out of rifts in the forest and follows the terrain to the Heart. Hold it until dawn. Each night is harder than the last, every fifth night brings a boss, and holding through night 10 wins the run. Endless mode keeps going after that.",
-      "0.6 added Blight Blooms: pods that sprout in the forest each dawn and open a new lane onto the Heart at dusk unless you cut them down, so every day is a choice between hunting and building. 0.7 gave it a cinematic title screen, three difficulties from Verdant to Blightborn, a Field Guide and lifetime records."
+      "0.6 added Blight Blooms: pods that sprout in the forest each dawn and open a new lane onto the Heart at dusk unless you cut them down, so every day is a choice between hunting and building. 0.7 gave it a cinematic title screen, three difficulties from Verdant to Blightborn, a Field Guide and lifetime records.",
+      "The 0.8 preview, \"The Long Vigil\", adds Spitters that lob burning bile at your towers and Burrowers that tunnel under your walls, the Glowcap Lantern that answers both, nights that are actually dark, and Memories: permanent unlocks earned from your lifetime records that carry into every vigil."
     ],
     "controls": [
       [
@@ -164,7 +165,7 @@
     "about": [
       "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
       "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea.",
-      "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players can start with Boot Camp."
+      "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players get First Orders, a guide that points at the very next click for the first six steps of any match, or can start with Boot Camp."
     ],
     "controls": [
       [
@@ -210,7 +211,8 @@
     "number": "6 nights · loot only counts if you extract",
     "about": [
       "You are a scavenger supplying Verdant Relay, a power-and-comms hub built into an overgrown transit station. By day you head out into a district: finish its objective, grab loot, then hold E in the extraction zone. Loot only counts if you get out.",
-      "By night you defend the Relay. Build towers on glowing pads, read the wave preview, and spend Intel to decrypt or sabotage what's coming. Survive six nights; the Canopy Colossus attacks on the last one. Research Data from every run buys permanent unlocks."
+      "By night you defend the Relay. Build towers on glowing pads, read the wave preview, and spend Intel to decrypt or sabotage what's coming. Survive six nights; the Canopy Colossus attacks on the last one. Research Data from every run buys permanent unlocks.",
+      "Stage 8 made every label and number readable at a glance and added foraging: wild fruit that heals, glints of scrap in the brush, and dusk blooms worth Intel and research."
     ],
     "controls": [
       [
