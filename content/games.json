@@ -101,16 +101,16 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "0.9.1",
+    "version": "1.0.1",
     "genre": "First-person gather, craft and defend",
     "session": "A 10-night run, saves every morning",
-    "pitch": "Strip the jungle by day. Hold the Heartwood by night. Gather, craft towers and traps, and survive until night 10.",
-    "number": "3 difficulties · 10 nights · a boss every 5th",
+    "pitch": "Raid the jungle by day and carry home what you can. Hold the Heartwood by night. Survive ten nights and find out what happened to the 1931 expedition.",
+    "number": "10 nights · 12 torn pages · 2 endings",
     "about": [
-      "By day you hack through the jungle with a machete, forage the forest floor, harvest trees and rocks, and scavenge old camps, wrecks and temples. In your satchel you craft what you found into towers, barricades and traps, and build them around the Heartwood, the glowing shrine at your camp.",
-      "At dusk the Blight crawls out of rifts in the forest and follows the terrain to the Heart. Hold it until dawn. Each night is harder than the last, every fifth night brings a boss, and holding through night 10 wins the run. Endless mode keeps going after that.",
-      "0.6 added Blight Blooms: pods that sprout in the forest each dawn and open a new lane onto the Heart at dusk unless you cut them down, so every day is a choice between hunting and building. 0.7 gave it a cinematic title screen, three difficulties from Verdant to Blightborn, a Field Guide and lifetime records.",
-      "0.9, \"Wild Places\", added a second region: the drowned grove, a sunken stretch of forest gone to black water, with mangroves, bog eels and bog iron, the Sunken Shrine at its heart, and a sixth rift from night 4. It also brought Spitters, Burrowers, the Glowcap Lantern and Memories, permanent unlocks that carry into every vigil. 0.9.1 made it run cooler and smoother, picks settings to fit your machine, and shows exactly what a recipe is missing."
+      "By day you hack through the jungle with a machete, forage the forest floor, and search old camps, wrecks, temples and root caches for what's inside. Everything you carry weighs something, so you choose what to bring home before dusk. At camp you craft it into towers, barricades and traps at the Workbench, Fire Pit and Tinker's Bench, and build them around the Heartwood, the glowing shrine at your camp.",
+      "At dusk the Blight crawls out of rifts in the forest and looks for the side your towers cover least. The Heartwood can only feed so many roots, so every defence is a budget call, and each kind of Blight shrugs off some damage types and breaks under others. Hold until dawn. Each night is harder, every fifth night brings a boss, and the Rot Mother comes on night 10. Endless mode keeps going after that.",
+      "Along the way came Blight Blooms that open new lanes unless you cut them down (0.6), three difficulties and a Field Guide (0.7), and the drowned grove, a second region of black water and mangroves with its own rift (0.9).",
+      "1.0, \"The Lost Expedition\", turned the day into a scavenging run and added a story: twelve torn pages from a 1931 expedition, three seals that put rifts to sleep, grafts for your towers, a radio that calls supply drops, the Rot spreading from the rifts, and two endings. It also added key rebinding, captions, colour-blind outlines, partial gamepad support, twenty achievements and a daily vigil. 1.0.1 halved what everything weighs and made the packs bigger."
     ],
     "controls": [
       [
@@ -126,8 +126,16 @@
         "Left mouse"
       ],
       [
-        "Gather, search, upgrade",
+        "Gather, search, open",
         "E"
+      ],
+      [
+        "Take all, rotate",
+        "R"
+      ],
+      [
+        "Pack up, use a bench",
+        "F"
       ],
       [
         "Satchel and crafting",
@@ -149,7 +157,7 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/overgrowth/blob/main/CHANGELOG.md",
     "madeWith": "JavaScript and Three.js. Code written with Claude Opus; surfaces and foliage generated with Flux, the hero models built in Blender from Python scripts, and the sound synthesized live.",
-    "platforms": "Browser (desktop, keyboard and mouse)"
+    "platforms": "Browser (desktop, keyboard and mouse; partial gamepad)"
   },
   {
     "id": "pixel-rts",
