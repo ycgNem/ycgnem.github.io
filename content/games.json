@@ -101,7 +101,7 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "genre": "First-person gather, craft and defend",
     "session": "A 10-night run, saves every morning",
     "pitch": "Raid the jungle by day and carry home what you can. Hold the Heartwood by night. Survive ten nights and find out what happened to the 1931 expedition.",
@@ -110,7 +110,7 @@
       "By day you hack through the jungle with a machete, forage the forest floor, and search old camps, wrecks, temples and root caches for what's inside. Everything you carry weighs something, so you choose what to bring home before dusk. At camp you craft it into towers, barricades and traps at the Workbench, Fire Pit and Tinker's Bench, and build them around the Heartwood, the glowing shrine at your camp.",
       "At dusk the Blight crawls out of rifts in the forest and looks for the side your towers cover least. The Heartwood can only feed so many roots, so every defence is a budget call, and each kind of Blight shrugs off some damage types and breaks under others. Hold until dawn. Each night is harder, every fifth night brings a boss, and the Rot Mother comes on night 10. Endless mode keeps going after that.",
       "Along the way came Blight Blooms that open new lanes unless you cut them down (0.6), three difficulties and a Field Guide (0.7), and the drowned grove, a second region of black water and mangroves with its own rift (0.9).",
-      "1.0, \"The Lost Expedition\", turned the day into a scavenging run and added a story: twelve torn pages from a 1931 expedition, three seals that put rifts to sleep, grafts for your towers, a radio that calls supply drops, the Rot spreading from the rifts, and two endings. It also added key rebinding, captions, colour-blind outlines, partial gamepad support, twenty achievements and a daily vigil. 1.0.1 halved what everything weighs and made the packs bigger."
+      "1.0, \"The Lost Expedition\", turned the day into a scavenging run and added a story: twelve torn pages from a 1931 expedition, three seals that put rifts to sleep, grafts for your towers, a radio that calls supply drops, the Rot spreading from the rifts, and two endings. It also added key rebinding, captions, colour-blind outlines, partial gamepad support, twenty achievements and a daily vigil. Since then, 1.0.1 halved what everything weighs, 1.0.2 got rid of the random freezes, and 1.0.3 made the satchel drag-and-drop, lets you clad the Coffer in iron and brass for up to 120 slots, and made the Blight a fifth tougher."
     ],
     "controls": [
       [

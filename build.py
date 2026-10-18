@@ -138,7 +138,8 @@ def chip(status):
     return f'<span class="chip st-{status}">{STATUS[status]}</span>'
 
 
-def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="website"):
+def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="website", wide=False):
+    wrap = "wrap wide" if wide else "wrap"
     full_title = f"{title} · ycgNem" if title != "ycgNem" else "ycgNem — free browser games, built in the open"
     nav = [("/#games", "Games"), ("/devlog/", "Devlog"), ("/community/", "Community")]
     nav_html = "".join(
@@ -175,7 +176,7 @@ def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="we
 </head>
 <body>
 <header class="site-head">
-  <div class="wrap">
+  <div class="{wrap}">
     <a class="logo" href="/" aria-label="ycgNem home"><img src="/assets/brand/ycgnem-lockup.svg" alt="ycgNem" width="113" height="30"></a>
     <nav class="nav" aria-label="Main">{nav_html}</nav>
     {cta}
@@ -185,7 +186,7 @@ def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="we
 {body}
 </main>
 <footer class="site-foot">
-  <div class="wrap">
+  <div class="{wrap}">
     <img src="/assets/brand/ycgnem-wordmark.svg" alt="ycgNem" width="95" height="22">
     <nav aria-label="Footer">
       <a href="/devlog/">Devlog</a><a href="/community/">Community</a>
@@ -246,83 +247,144 @@ def post_rows(posts):
 </a>""" for p in posts) + "</div>"
 
 
+# Home page shelves: which statuses go on which shelf, in order. Empty shelves are skipped.
+SHELVES = [
+    (("released",), "Released", "Finished, polished, and still getting updates.", False),
+    (("playable",), "Early access", "Playable and growing. Updates land often.", False),
+    (("playtest",), "In playtest", "Playable start to finish, with rough edges. Tell me what you felt.", False),
+    (("prototype", "indev"), "Prototypes", "Small builds that test whether an idea is fun.", True),
+]
+
+
+def spotlight():
+    """The big switcher at the top of the home page. Pure CSS: one radio per slide."""
+    items = [(s, next(g for g in GAMES if g["id"] == s["game"])) for s in SITE.get("spotlight", [])][:4]
+    radios = "".join(f'<input class="spot-radio" type="radio" name="spot" id="spot-{i}"{" checked" if i == 0 else ""}>'
+                     for i in range(len(items)))
+    slides = "".join(f"""<article class="slide s{i}">
+      <img src="{e(s['image'])}" alt="{e(g['title'])} screenshot" width="1280" height="720"{' loading="lazy"' if i else ""}>
+      <div class="slide-panel">
+        <div class="meta">{chip(g['status'])}<span class="ver">{ver(g)}</span></div>
+        <h2>{e(g['title'])}</h2>
+        <p class="kicker">{e(s['kicker'])}</p>
+        <p class="pitch">{e(g['pitch'])}</p>
+        <div class="slide-actions">
+          <a class="btn btn-primary" href="/games/{g['id']}/#play">{PLAY_ICON}Play free</a>
+          <a class="btn btn-ghost" href="{e(s['link'])}">What's new</a>
+        </div>
+      </div>
+    </article>""" for i, (s, g) in enumerate(items))
+    tabs = "".join(f"""<label class="spot-tab" for="spot-{i}">
+      <img src="/assets/games/{g['id']}/cover-640.webp" alt="" width="640" height="360" loading="lazy">
+      <span><b>{e(g['title'])}</b><span>{e(s['short'])}</span></span>
+    </label>""" for i, (s, g) in enumerate(items))
+    tabs_html = f'<div class="spot-tabs">{tabs}</div>' if len(items) > 1 else ""
+    return f'<div class="spot">{radios}<div class="spot-stage">{slides}</div>{tabs_html}</div>'
+
+
+def feature_card(g):
+    return f"""<a class="feature-card" href="/games/{g['id']}/">
+  <img src="/assets/games/{g['id']}/cover.webp" alt="{e(g['title'])} screenshot" width="1280" height="720" loading="lazy">
+  <div class="feature-body">
+    <div class="meta">{chip(g['status'])}<span class="ver">{ver(g)}</span></div>
+    <h3>{e(g['title'])}</h3>
+    <p class="genre">{e(g['genre'])} · {e(g['platforms'])}</p>
+    <p class="pitch">{e(g['pitch'])}</p>
+    <p class="stat">{e(g['number'])}</p>
+  </div>
+</a>"""
+
+
+def shelf_card(g, small):
+    body = (f'<p class="genre">{e(g["genre"])}</p>' if small
+            else f'<p class="pitch">{e(g["pitch"])}</p><p class="stat">{e(g["number"])}</p>')
+    soon = "" if g["play"] else '<p class="soon">Not playable online yet</p>'
+    return f"""<a class="shelf-card" href="/games/{g['id']}/">
+  <img src="/assets/games/{g['id']}/cover-640.webp" alt="{e(g['title'])} screenshot" width="640" height="360" loading="lazy">
+  <div class="shelf-title"><h3>{e(g['title'])}</h3><span class="ver st-{g['status']}">{ver(g)}</span></div>
+  {body}{soon}
+</a>"""
+
+
+def shelves():
+    out = []
+    for statuses, title, blurb, small in SHELVES:
+        games = [g for g in GAMES if g["status"] in statuses]
+        if not games:
+            continue
+        feature = next((g for g in games if g.get("featured")), None)
+        rest = [g for g in games if g is not feature]
+        grid = (f'<div class="shelf-grid{" sm" if small else ""}">{"".join(shelf_card(g, small) for g in rest)}</div>'
+                if rest else "")
+        out.append(f"""<div class="shelf">
+  <div class="shelf-head"><h3>{title}</h3><p class="muted">{blurb}</p></div>
+  {feature_card(feature) if feature else ""}{grid}
+</div>""")
+    return "".join(out)
+
+
+def post_list(posts):
+    return '<div class="post-list">' + "".join(f"""<a href="/devlog/{p['slug']}/">
+  <time datetime="{p['date']}">{nice_date(p['date'])}</time>
+  <div><h3>{e(p['title'])}</h3><p>{e(p['summary'])}</p></div>
+</a>""" for p in posts) + "</div>"
+
+
 def page_index(posts, updated):
     playable = [g for g in GAMES if g["play"]]
-    featured = next(g for g in GAMES if g.get("featured"))
-    attract = "".join(
-        f'<img src="/assets/games/{g["id"]}/cover.webp" alt="{e(g["title"])}" data-href="/games/{g["id"]}/" width="1280" height="720"{" loading=\"lazy\"" if i else ""}>'
-        for i, g in enumerate(GAMES))
     discord = SITE["socials"].get("discord")
-    discord_btn = (f'<a class="btn btn-primary" href="{e(discord)}">Join the Discord</a>' if discord
-                   else '<span class="btn btn-ghost" aria-disabled="true">Discord opens soon</span>')
-    workshop = "".join(f"""<a class="workshop" href="/games/{g['id']}/">
-      <img src="/assets/games/{g['id']}/cover-640.webp" alt="{e(g['title'])} screenshot" width="640" height="360">
-      <div><p class="eyebrow">In the workshop</p><h3>{e(g['title'])}</h3><p class="muted">{e(g['genre'])} · not playable online yet</p>
-      <p>{e(g['pitch'])}</p></div></a>""" for g in GAMES if not g["play"])
+    join = [f'<a class="btn btn-primary" href="{e(discord)}">Join the Discord</a>' if discord
+            else '<span class="btn btn-ghost" aria-disabled="true">Discord opens soon</span>']
+    join += [f'<a class="btn btn-ghost" href="{e(u)}" rel="me noopener">Follow on {SOCIAL_NAMES[k]}</a>'
+             for k, u in SITE["socials"].items() if u and k != "discord"]
+    join.append('<a class="btn btn-ghost" href="/feed.xml">RSS feed</a>')
     body = f"""
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-copy">
-      <p class="eyebrow">Solo dev · {len(GAMES)} games · free in your browser</p>
-      <h1>Play it now. See how it's made.</h1>
-      <p class="lede">I'm ycgNem, a gamer making the games I want to play, built with Claude Opus. Every game here is free in your browser, and every repo is public.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="/games/{featured['id']}/#play">{PLAY_ICON}Play {e(featured['title'])}</a>
-        <a class="btn btn-ghost" href="{e(SITE['socials']['github'])}">Source on GitHub</a>
-      </div>
+<h1 class="vh">ycgNem: free browser games, built in the open</h1>
+<section class="showcase">
+  <div class="wrap wide">{spotlight()}</div>
+</section>
+
+<section class="band" id="games">
+  <div class="wrap wide">
+    <div class="band-head">
+      <div><p class="eyebrow">The cabinet</p><h2>Every game, free in your browser</h2></div>
       <ul class="proof">
         <li><b>{len(playable)}</b> playable now</li>
         <li><b>{len(GAMES)}</b> public repos</li>
         <li><b>0</b> ads, accounts or downloads</li>
       </ul>
     </div>
-    <div class="cabinet">
-      <div class="screen" data-attract role="link" aria-label="Game previews">{attract}</div>
-      <div class="marquee"><span class="now" data-attract-label></span><span class="free-play">FREE PLAY</span></div>
-    </div>
+    <div class="shelves">{shelves()}</div>
+    <p class="muted shelf-note">Best on a computer with a keyboard and mouse.</p>
   </div>
 </section>
-
-<section class="band" id="games">
-  <div class="wrap">
-    <div class="band-head">
-      <div><p class="eyebrow">The cabinet</p><h2>Every game, playable here</h2></div>
-      <p class="muted">Best on a computer with a keyboard and mouse.</p>
-    </div>
-    <div class="grid">{"".join(card(g, updated) for g in playable)}</div>
-    {workshop}
-  </div>
-</section>
-
 
 <section class="band">
-  <div class="wrap">
-    <div class="band-head">
-      <div><p class="eyebrow">Devlog</p><h2>What shipped lately</h2></div>
+  <div class="wrap wide home-devlog">
+    <div class="home-devlog-head">
+      <p class="eyebrow">Devlog</p>
+      <h2>What shipped lately</h2>
+      <p class="muted">What changed, why, and the numbers behind it.</p>
       <a class="btn btn-ghost btn-sm" href="/devlog/">All posts</a>
     </div>
-    {post_rows(posts[:3])}
+    {post_list(posts[:3])}
   </div>
 </section>
 
 <section class="band">
-  <div class="wrap community">
-    <div class="discord-card">
-      <p class="eyebrow">Community</p>
-      <h2>Playtest with me</h2>
-      <p class="muted">New builds land in the Discord first. Tell me what you felt, vote on what gets built next, and get your name in the credits of the games you shaped.</p>
-      <div>{discord_btn}</div>
-    </div>
-    <div style="display:grid;gap:16px">
-      <h3>Follow along</h3>
-      <p class="muted">Short clips of new builds, the numbers behind the design, and the honest version of how it got made.</p>
-      {socials_html()}
-      <p class="muted">Or subscribe to the <a href="/feed.xml">devlog RSS feed</a>.</p>
+  <div class="wrap wide">
+    <div class="join">
+      <div class="join-copy">
+        <p class="eyebrow" style="color:var(--teal)">Free play · built in the open</p>
+        <h2>Playtest with me</h2>
+        <p class="muted">New builds land in the Discord first. Tell me what you felt, vote on what gets built next, and get your name in the credits of the games you shaped. Every repo is public and every update gets patch notes.</p>
+      </div>
+      <div class="join-actions">{"".join(join)}</div>
     </div>
   </div>
 </section>
 """
-    return layout("/", "ycgNem", SITE["description"], body)
+    return layout("/", "ycgNem", SITE["description"], body, wide=True)
 
 
 def page_game(g, updated, posts):

@@ -54,6 +54,15 @@ Make the Discord invite **never expire** (Server Settings → Invites, or the in
    and any number of `shot1.webp`, `shot2.webp`... They show up in the game page's gallery.
 3. Publish.
 
+## Change what's featured on the home page
+
+The big switcher at the top of the home page is `spotlight` in `content/site.json`: one to four games, each with
+the amber line under its title (`kicker`), the line on its tab (`short`), a 1280×720 screenshot (`image`) and where
+"What's new" goes (`link`). Put the newest update first.
+
+Below it, games sit on shelves by `status`: Released, Early access, In playtest, Prototypes. The game marked
+`"featured": true` gets the big card on its shelf.
+
 ## Write a devlog post
 
 Make a file in `content/devlog/` named `YYYY-MM-DD-short-name.md`:

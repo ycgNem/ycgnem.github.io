@@ -3,6 +3,30 @@
   "url": "https://ycgnem.github.io",
   "tagline": "Play it now. See how it's made.",
   "description": "ycgNem makes free browser games with AI and shows the whole process: every repo public, every number on screen, every patch noted.",
+  "_spotlight_help": "The big switcher at the top of the home page, 1 to 4 games. game = an id from games.json; kicker = the amber line under the title; short = the line on its tab; image = a 1280x720 screenshot; link = where 'What's new' goes.",
+  "spotlight": [
+    {
+      "game": "overgrowth",
+      "kicker": "1.0.3: Iron and Order",
+      "short": "1.0.3 is out",
+      "image": "/assets/games/overgrowth/shot4.webp",
+      "link": "/devlog/overgrowth-1-0-3/"
+    },
+    {
+      "game": "sprocket-and-sprout",
+      "kicker": "2.1: Overseas",
+      "short": "A merchant ship calls",
+      "image": "/assets/games/sprocket-and-sprout/cover.webp",
+      "link": "/devlog/sprocket-2-1/"
+    },
+    {
+      "game": "pixel-rts",
+      "kicker": "Up to six players online",
+      "short": "Rivers and bridges",
+      "image": "/assets/games/pixel-rts/cover.webp",
+      "link": "/devlog/overgrowth-0-9/"
+    }
+  ],
   "_socials_help": "Paste each profile URL once the account exists. Empty ones are hidden on the site.",
   "socials": {
     "discord": "",
