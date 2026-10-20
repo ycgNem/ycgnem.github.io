@@ -251,7 +251,7 @@ def post_rows(posts):
 SHELVES = [
     (("released",), "Released", "Finished, polished, and still getting updates.", False),
     (("playable",), "Early access", "Playable and growing. Updates land often.", False),
-    (("playtest",), "In playtest", "Playable start to finish, with rough edges. Tell me what you felt.", False),
+    (("playtest",), "In playtest", "Playable start to finish, with rough edges.", False),
     (("prototype", "indev"), "Prototypes", "Small builds that test whether an idea is fun.", True),
 ]
 
@@ -377,7 +377,7 @@ def page_index(posts, updated):
       <div class="join-copy">
         <p class="eyebrow" style="color:var(--teal)">Free play · built in the open</p>
         <h2>Playtest with me</h2>
-        <p class="muted">New builds land in the Discord first. Tell me what you felt, vote on what gets built next, and get your name in the credits of the games you shaped. Every repo is public and every update gets patch notes.</p>
+        <p class="muted">New builds land in the Discord first. Vote on what gets built next, and get your name in the credits of the games you shaped. Every repo is public and every update gets patch notes.</p>
       </div>
       <div class="join-actions">{"".join(join)}</div>
     </div>
