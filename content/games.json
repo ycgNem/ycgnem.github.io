@@ -49,53 +49,6 @@
     "featured": true
   },
   {
-    "id": "arcwarm",
-    "title": "Arcwarm",
-    "repo": "arcwarm",
-    "play": "https://ycgnem.github.io/arcwarm/",
-    "status": "playtest",
-    "version": "0.1",
-    "genre": "Arena FPS aim warm-up",
-    "session": "2–5 minute duels",
-    "pitch": "A Quake Live lightning-gun duel against a bot, with Halo gravity and shields. The duel is the warm-up.",
-    "number": "LG: 6 dmg every 50 ms = 120 dps",
-    "about": [
-      "A 2–5 minute aim warm-up you play as a game. You and a bot share the same movement and the same lightning gun, so you track while you move and dodge, and the bot's beam punishes predictable movement.",
-      "Halo gravity and air control, Quake Live gun and hitbox numbers. Lifesteal is on by default: every hit heals the shooter, so a fight is decided by who misses more. The bot's aim comes from perception delay and your movement, not dice, across five levels from Easy to Nightmare.",
-      "Two maps: Pinehollow, a forest bowl with a treehouse, a shrine and a man cannon, and the White Room, a plain grid with ramps."
-    ],
-    "controls": [
-      [
-        "Move",
-        "WASD"
-      ],
-      [
-        "Jump (hold to hop)",
-        "Space"
-      ],
-      [
-        "Crouch / crouch-jump",
-        "C"
-      ],
-      [
-        "Fire the beam",
-        "Left mouse"
-      ],
-      [
-        "Scores",
-        "Tab"
-      ],
-      [
-        "360° sensitivity test",
-        "F2"
-      ]
-    ],
-    "notes": "plan",
-    "notesUrl": "https://github.com/ycgNem/arcwarm/blob/main/PLAN.md",
-    "madeWith": "JavaScript and Three.js. Code written with Claude Opus from my design notes.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
-  },
-  {
     "id": "overgrowth",
     "title": "Overgrowth",
     "repo": "overgrowth",
@@ -160,50 +113,50 @@
     "platforms": "Browser (desktop, keyboard and mouse; partial gamepad)"
   },
   {
-    "id": "pixel-rts",
-    "title": "Pixel RTS",
-    "repo": "pixel-rts",
-    "play": "https://ycgnem.github.io/pixel-rts/",
+    "id": "arcwarm",
+    "title": "Arcwarm",
+    "repo": "arcwarm",
+    "play": "https://ycgnem.github.io/arcwarm/",
     "status": "playtest",
-    "version": "early",
-    "genre": "Real-time strategy",
-    "session": "Skirmish or online, 1–6 players",
-    "pitch": "Mine ore, pump oil, build armies and capture cities. Win by conquest, by science, or by holding the map. Up to six players online, nothing to install.",
-    "number": "29 techs · 4 eras · 1–6 players",
+    "version": "0.1",
+    "genre": "Arena FPS aim warm-up",
+    "session": "2–5 minute duels",
+    "pitch": "A Quake Live lightning-gun duel against a bot, with Halo gravity and shields. The duel is the warm-up.",
+    "number": "LG: 6 dmg every 50 ms = 120 dps",
     "about": [
-      "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
-      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges. Each player can build 21 buildings plus 4 for every city they hold, and you can sell units back for half their cost.",
-      "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players get First Orders, a guide that points at the very next click for the first six steps of any match, or can start with Boot Camp."
+      "A 2–5 minute aim warm-up you play as a game. You and a bot share the same movement and the same lightning gun, so you track while you move and dodge, and the bot's beam punishes predictable movement.",
+      "Halo gravity and air control, Quake Live gun and hitbox numbers. Lifesteal is on by default: every hit heals the shooter, so a fight is decided by who misses more. The bot's aim comes from perception delay and your movement, not dice, across five levels from Easy to Nightmare.",
+      "Two maps: Pinehollow, a forest bowl with a treehouse, a shrine and a man cannon, and the White Room, a plain grid with ramps."
     ],
     "controls": [
       [
-        "Select / box-select",
-        "Left click / drag"
+        "Move",
+        "WASD"
       ],
       [
-        "Smart order",
-        "Right click"
+        "Jump (hold to hop)",
+        "Space"
       ],
       [
-        "Attack-move / stop / hold",
-        "A / S / H"
+        "Crouch / crouch-jump",
+        "C"
       ],
       [
-        "Control groups",
-        "Ctrl+1–9, then 1–9"
+        "Fire the beam",
+        "Left mouse"
       ],
       [
-        "Build menu (Builder selected)",
-        "B"
+        "Scores",
+        "Tab"
       ],
       [
-        "Pan / zoom",
-        "WASD, arrows or edges / wheel"
+        "360° sensitivity test",
+        "F2"
       ]
     ],
     "notes": "plan",
-    "notesUrl": "https://github.com/ycgNem/pixel-rts/blob/main/docs/PLAN.md",
-    "madeWith": "TypeScript and Canvas 2D, no engine; online play is peer to peer over WebRTC. Code written with Claude Opus from my design docs; pixel art from PixelLab.",
+    "notesUrl": "https://github.com/ycgNem/arcwarm/blob/main/PLAN.md",
+    "madeWith": "JavaScript and Three.js. Code written with Claude Opus from my design notes.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
@@ -254,101 +207,106 @@
     "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
-    "id": "knucklebound",
-    "title": "Knucklebound",
-    "repo": "knucklebound",
-    "play": "https://ycgnem.github.io/knucklebound/",
-    "status": "playable",
-    "version": "Act 2",
-    "genre": "Bare-knuckle fighting story game",
-    "session": "A story campaign, saves in your browser",
-    "pitch": "Walk Port Calloway at night, fight your way up its underground circuit, and pay down an $80,000 debt one purse at a time.",
-    "number": "$80,000 debt · 22 fighters · 2 of 4 acts",
+    "id": "pixel-rts",
+    "title": "Pixel RTS",
+    "repo": "pixel-rts",
+    "play": "https://ycgnem.github.io/pixel-rts/",
+    "status": "playtest",
+    "version": "early",
+    "genre": "Real-time strategy",
+    "session": "Skirmish or online, 1–6 players",
+    "pitch": "Mine ore, pump oil, build armies and capture cities. Win by conquest, by science, or by holding the map. Up to six players online, nothing to install.",
+    "number": "29 techs · 4 eras · 1–6 players",
     "about": [
-      "You are Nico Varga, and you owe $80,000. Walk Port Calloway in the rain: Calloway Street, Pier Road and the Docks. Talk to people, take fights on the street where they stand, and climb from Pit Nights in the back room of a laundromat toward the APEX cage.",
-      "Every fight is decided by your own hands: slip, parry, counter and combo while you manage stamina, through knockdowns, rounds and decisions. Each opponent is a different style to solve, and the rules change what's allowed, from Undertow Rules with kicks to bare-knuckle boxing with punches only.",
-      "Right now the campaign is playable through Act 2: Kiko Navarro on Level 4 of a parking garage, the Deacon inside St. Agnes, and Auction Night against the Ox on a ferry's car deck. Between fights you train at Sal's gym, climb the Ladder at the Laundry and pay down the debt. Acts 3 and 4 are next. Or skip the story and pick a Pit Fight against any of 22 fighters."
+      "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
+      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges. Each player can build 21 buildings plus 4 for every city they hold, and you can sell units back for half their cost.",
+      "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players get First Orders, a guide that points at the very next click for the first six steps of any match, or can start with Boot Camp."
     ],
     "controls": [
       [
-        "Walk / jog (city)",
-        "WASD / Shift"
+        "Select / box-select",
+        "Left click / drag"
       ],
       [
-        "Talk, interact",
-        "E"
+        "Smart order",
+        "Right click"
       ],
       [
-        "Lead / rear hand",
-        "Left / right mouse"
+        "Attack-move / stop / hold",
+        "A / S / H"
       ],
       [
-        "Hook / uppercut / body",
-        "Hold Shift / Ctrl / V"
+        "Control groups",
+        "Ctrl+1–9, then 1–9"
       ],
       [
-        "Lead / rear kick",
-        "Q / E"
+        "Build menu (Builder selected)",
+        "B"
       ],
       [
-        "Guard",
-        "Space"
+        "Pan / zoom",
+        "WASD, arrows or edges / wheel"
+      ]
+    ],
+    "notes": "plan",
+    "notesUrl": "https://github.com/ycgNem/pixel-rts/blob/main/docs/PLAN.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine; online play is peer to peer over WebRTC. Code written with Claude Opus from my design docs; pixel art from PixelLab.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "foldworks",
+    "title": "Foldworks",
+    "repo": "foldworks",
+    "play": "https://ycgnem.github.io/foldworks/",
+    "status": "playtest",
+    "version": "M4",
+    "genre": "Incremental factory builder",
+    "session": "Incremental, saves in your browser",
+    "pitch": "Build a production line, fold it into a single tile, and build the next, bigger floor out of what you folded. For a frog mayor who really wants Gizmos.",
+    "number": "70 s audit → grade S+ to D → one tile",
+    "about": [
+      "Start with a hand furnace and an iron ore patch you mine by clicking. Build lines on a grid with miners, belts, smelters, presses and assemblers, and sell what reaches the Dock to Mayor Bramble, a frog who really wants Gizmos.",
+      "The twist is folding. When a line runs well, draw a box around it: a 70-second audit measures what goes in and out and grades it from S+ to D, and the whole line becomes one tile that keeps producing at that rate. Stamp copies, then build the Factory floor out of your folded modules.",
+      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. Right now the Workshop and the Factory are playable through Act II: power grids, bigger machines, Overdrive and the Great Drill. The District and the World floors come next."
+    ],
+    "controls": [
+      [
+        "Mine, place, select",
+        "Click"
       ],
       [
-        "Slip and duck",
-        "Arrow keys"
+        "Pick from the store",
+        "1–9"
       ],
       [
-        "Clinch",
+        "Rotate / remove",
+        "R / X"
+      ],
+      [
+        "Fold a line",
         "F"
       ],
       [
-        "Gamepad",
-        "Supported"
+        "Switch floor",
+        "Tab"
+      ],
+      [
+        "Research / orders",
+        "T / O"
+      ],
+      [
+        "Pan / zoom",
+        "WASD / Q, E"
+      ],
+      [
+        "Pause / help",
+        "Space / /"
       ]
     ],
     "notes": "progress notes",
-    "notesUrl": "https://github.com/ycgNem/knucklebound/blob/main/PROGRESS.md",
-    "madeWith": "TypeScript and three.js (WebGPU), with Rapier physics. Code written with Claude Opus from my design docs; fighters and venues built in Blender from Python scripts on a CC0 MakeHuman base, and the sound synthesized.",
-    "platforms": "Browser (Chrome or Edge with WebGPU, WebGL2 fallback), keyboard and mouse or gamepad"
-  },
-  {
-    "id": "slipstream-salvager",
-    "title": "Slipstream Salvager",
-    "repo": "slipstream-salvager",
-    "play": "https://ycgnem.github.io/slipstream-salvager/",
-    "status": "prototype",
-    "version": "0.3",
-    "genre": "Top-down action roguelike",
-    "session": "About 15 minutes a run",
-    "pitch": "A small, fast scrap robot rips parts off enemies at full speed and bolts them onto itself. Your movement is your weapon.",
-    "number": "only full-speed hits do damage",
-    "about": [
-      "Six yards, about fifteen minutes, ending in a boss, The Compactor, that you take apart one move at a time. Only a hit at full speed does damage, and every part you tear off and bolt on changes how you move and attack: a Booster's Burn, Grip Treads that power-slide, Jump Jets, Springs, a Plow, Jaws.",
-      "You pick your route by driving out through exit gates whose signs show what you can salvage there. Three chassis to unlock by playing, two run modifiers, and a daily run with one seed a day that is the same for everyone."
-    ],
-    "controls": [
-      [
-        "Steer",
-        "WASD / arrows"
-      ],
-      [
-        "Rip (hold with a Booster)",
-        "Space / J"
-      ],
-      [
-        "Bolt on",
-        "E / K"
-      ],
-      [
-        "Pause",
-        "Esc"
-      ]
-    ],
-    "notes": "patch notes",
-    "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
-    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser, Windows"
+    "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/PROGRESS.md",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art drawn pixel by pixel by Claude in build scripts, and the sound made procedurally.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
     "id": "last-watt",
@@ -396,6 +354,44 @@
     "notesUrl": "https://github.com/ycgNem/last-watt#readme",
     "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "slipstream-salvager",
+    "title": "Slipstream Salvager",
+    "repo": "slipstream-salvager",
+    "play": "https://ycgnem.github.io/slipstream-salvager/",
+    "status": "prototype",
+    "version": "0.3",
+    "genre": "Top-down action roguelike",
+    "session": "About 15 minutes a run",
+    "pitch": "A small, fast scrap robot rips parts off enemies at full speed and bolts them onto itself. Your movement is your weapon.",
+    "number": "only full-speed hits do damage",
+    "about": [
+      "Six yards, about fifteen minutes, ending in a boss, The Compactor, that you take apart one move at a time. Only a hit at full speed does damage, and every part you tear off and bolt on changes how you move and attack: a Booster's Burn, Grip Treads that power-slide, Jump Jets, Springs, a Plow, Jaws.",
+      "You pick your route by driving out through exit gates whose signs show what you can salvage there. Three chassis to unlock by playing, two run modifiers, and a daily run with one seed a day that is the same for everyone."
+    ],
+    "controls": [
+      [
+        "Steer",
+        "WASD / arrows"
+      ],
+      [
+        "Rip (hold with a Booster)",
+        "Space / J"
+      ],
+      [
+        "Bolt on",
+        "E / K"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
+    "platforms": "Browser, Windows"
   },
   {
     "id": "slipstream-salvager-3d",
