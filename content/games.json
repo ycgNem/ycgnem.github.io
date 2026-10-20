@@ -172,7 +172,7 @@
     "number": "29 techs · 4 eras · 1–6 players",
     "about": [
       "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
-      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges.",
+      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges. Each player can build 21 buildings plus 4 for every city they hold, and you can sell units back for half their cost.",
       "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players get First Orders, a guide that points at the very next click for the first six steps of any match, or can start with Boot Camp."
     ],
     "controls": [
@@ -252,6 +252,65 @@
     "notesUrl": "https://github.com/ycgNem/verdant-relay#readme",
     "madeWith": "JavaScript and Three.js, rendered as pixel art. Code written with Claude Opus from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
     "platforms": "Browser (desktop, keyboard and mouse)"
+  },
+  {
+    "id": "knucklebound",
+    "title": "Knucklebound",
+    "repo": "knucklebound",
+    "play": "https://ycgnem.github.io/knucklebound/",
+    "status": "playable",
+    "version": "Act 2",
+    "genre": "Bare-knuckle fighting story game",
+    "session": "A story campaign, saves in your browser",
+    "pitch": "Walk Port Calloway at night, fight your way up its underground circuit, and pay down an $80,000 debt one purse at a time.",
+    "number": "$80,000 debt · 22 fighters · 2 of 4 acts",
+    "about": [
+      "You are Nico Varga, and you owe $80,000. Walk Port Calloway in the rain: Calloway Street, Pier Road and the Docks. Talk to people, take fights on the street where they stand, and climb from Pit Nights in the back room of a laundromat toward the APEX cage.",
+      "Every fight is decided by your own hands: slip, parry, counter and combo while you manage stamina, through knockdowns, rounds and decisions. Each opponent is a different style to solve, and the rules change what's allowed, from Undertow Rules with kicks to bare-knuckle boxing with punches only.",
+      "Right now the campaign is playable through Act 2: Kiko Navarro on Level 4 of a parking garage, the Deacon inside St. Agnes, and Auction Night against the Ox on a ferry's car deck. Between fights you train at Sal's gym, climb the Ladder at the Laundry and pay down the debt. Acts 3 and 4 are next. Or skip the story and pick a Pit Fight against any of 22 fighters."
+    ],
+    "controls": [
+      [
+        "Walk / jog (city)",
+        "WASD / Shift"
+      ],
+      [
+        "Talk, interact",
+        "E"
+      ],
+      [
+        "Lead / rear hand",
+        "Left / right mouse"
+      ],
+      [
+        "Hook / uppercut / body",
+        "Hold Shift / Ctrl / V"
+      ],
+      [
+        "Lead / rear kick",
+        "Q / E"
+      ],
+      [
+        "Guard",
+        "Space"
+      ],
+      [
+        "Slip and duck",
+        "Arrow keys"
+      ],
+      [
+        "Clinch",
+        "F"
+      ],
+      [
+        "Gamepad",
+        "Supported"
+      ]
+    ],
+    "notes": "progress notes",
+    "notesUrl": "https://github.com/ycgNem/knucklebound/blob/main/PROGRESS.md",
+    "madeWith": "TypeScript and three.js (WebGPU), with Rapier physics. Code written with Claude Opus from my design docs; fighters and venues built in Blender from Python scripts on a CC0 MakeHuman base, and the sound synthesized.",
+    "platforms": "Browser (Chrome or Edge with WebGPU, WebGL2 fallback), keyboard and mouse or gamepad"
   },
   {
     "id": "slipstream-salvager",
@@ -339,40 +398,6 @@
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
-    "id": "trotline",
-    "title": "Trotline",
-    "repo": "trotline",
-    "play": "https://ycgnem.github.io/trotline/",
-    "status": "prototype",
-    "version": "0.1",
-    "genre": "Fishing tower defense",
-    "session": "A 12-wave season",
-    "pitch": "You don't buy towers here. You catch them. Fish from the dock, then sell each catch or put it in the water to guard the smokehouse.",
-    "number": "catch rate = zone × habitat × bait × reel",
-    "about": [
-      "Thieves walk the road toward your smokehouse. Your defenders are what you pull out of the water: fish from the dock, then sell each catch or deploy it to guard the shore. Bait lures pull fish in, chum draws gulls and bears out where your rays can reach them.",
-      "A season is 12 waves. Send boats (a rowboat, a skiff and a trawler) to fish where you point them and bring the catch back to the live well. Every catch rate comes from one formula you can read: the zone, where the line sits, the bait, and the reel."
-    ],
-    "controls": [
-      [
-        "Cast / place",
-        "Click"
-      ],
-      [
-        "Build menu",
-        "B"
-      ],
-      [
-        "Help and keys",
-        "/"
-      ]
-    ],
-    "notes": "progress notes",
-    "notesUrl": "https://github.com/ycgNem/trotline/blob/main/PROGRESS.md",
-    "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser"
-  },
-  {
     "id": "slipstream-salvager-3d",
     "title": "Slipstream Salvager 3D",
     "repo": "slipstream-salvager-3d",
@@ -417,44 +442,5 @@
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
     "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Opus from my design docs.",
     "platforms": "Browser, Windows"
-  },
-  {
-    "id": "carpet-joint",
-    "title": "Carpet Joint",
-    "repo": "pegwork",
-    "play": "https://ycgnem.github.io/pegwork/",
-    "status": "prototype",
-    "version": "M0",
-    "genre": "Casino management roguelike",
-    "session": "A night on the strip",
-    "pitch": "Run the house on a neon 1970s strip. Write your own games' odds, work the floor live, and survive the swings, because the house doesn't always win.",
-    "number": "Hi-Lo: 16.7% house edge, on screen",
-    "about": [
-      "You run the house. Click a table to see its paytable with every bet's exact house edge and hit rate, and change what a bet pays. The cage panel shows the Sweat: the chance the cage runs dry before 6am, from replaying the rest of tonight 500 times with the real paytables.",
-      "Right now this is the debug floor: a sawdust joint with two tables and a night's crowd walking in. Send in a whale and watch the Sweat move.",
-      "No real money, ever."
-    ],
-    "controls": [
-      [
-        "Open a table",
-        "Click it"
-      ],
-      [
-        "Change a payout",
-        "- / +"
-      ],
-      [
-        "Pause",
-        "Space"
-      ],
-      [
-        "Speed",
-        "1 / 2"
-      ]
-    ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/pegwork#readme",
-    "madeWith": "TypeScript and one 640×360 canvas, deterministic 60 Hz sim. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser"
   }
 ]

@@ -6,6 +6,13 @@
   "_spotlight_help": "The big switcher at the top of the home page, 1 to 4 games. game = an id from games.json; kicker = the amber line under the title; short = the line on its tab; image = a 1280x720 screenshot; link = where 'What's new' goes.",
   "spotlight": [
     {
+      "game": "knucklebound",
+      "kicker": "New: playable through Act 2",
+      "short": "New game",
+      "image": "/assets/games/knucklebound/cover.webp",
+      "link": "/games/knucklebound/"
+    },
+    {
       "game": "overgrowth",
       "kicker": "1.0.3: Iron and Order",
       "short": "1.0.3 is out",
