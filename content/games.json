@@ -322,7 +322,7 @@
     "about": [
       "An enemy's health is in kJ, and a Lamp drawing 12 kW does 6 kJ/s only if the grid can feed it. Build more towers than your Burners can run and the whole wall slows down together. Keep the Hearth lit for 12 waves, then see how long it lasts in endless.",
       "Four maps, six towers with branching upgrades, and seven enemies that each hit the grid a different way: Shades cut Nodes, Snuffers put out Burners, Siphons drink from your lines. Each Node carries at most 60 kW, so where the power goes is a decision.",
-      "This one is a work in progress, built to find out whether the idea is fun. What you felt matters more than bugs."
+      "This one is a work in progress, built to find out whether the idea is fun."
     ],
     "controls": [
       [

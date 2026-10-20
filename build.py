@@ -510,8 +510,7 @@ def page_community():
       <div class="panel">
         <h3>Good feedback looks like</h3>
         <ul>
-          <li>What you felt: bored, tense, confused, hooked</li>
-          <li>The moment it happened ("wave 4, when the Shades cut my Node")</li>
+          <li>What happened and when ("wave 4, when the Shades cut my Node")</li>
           <li>What you expected instead</li>
           <li>Bugs: what you did, what happened, your browser</li>
         </ul>
