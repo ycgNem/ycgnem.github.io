@@ -207,6 +207,61 @@
     "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
+    "id": "fins-and-fronds",
+    "title": "Fins & Fronds",
+    "repo": "fins-and-fronds",
+    "play": "https://ycgnem.github.io/fins-and-fronds/",
+    "status": "playtest",
+    "version": "0.1",
+    "genre": "Cozy aquarium tycoon",
+    "session": "Open-ended, saves in your browser",
+    "pitch": "Scape, stock and care for every real kind of aquarium, from Iwagumi stone gardens to Malawi rockwork and reefs, and grow a little fish shop into a grand oceanarium.",
+    "number": "189 species · 63 tank types · 27 regions",
+    "about": [
+      "You get the keys to an empty fish shop. Set up tanks, landscape them with sand, stone, driftwood and plants, and stock them with fish, shrimp, snails and corals. Keep the water right: the game tracks real water chemistry, from the nitrogen cycle to pH, hardness and salinity.",
+      "Build a real kind of tank and the game recognizes it, from a community tank to Rio Negro blackwater or a Lake Malawi rock shore, then rates it on wellbeing, habitat, scape, authenticity and spectacle. Visitors pay to see it, though you never see them, only their nose prints on the glass.",
+      "Breed stock to sell, answer letters, and send expeditions to 27 regions for new species. Grow from a Little Fish Shop to a Grand Oceanarium with reefs, kelp towers, jellyfish and big sharks. Press V to watch any tank full screen."
+    ],
+    "controls": [
+      [
+        "Everything",
+        "Mouse"
+      ],
+      [
+        "Tank modes",
+        "1–6"
+      ],
+      [
+        "Feed",
+        "F"
+      ],
+      [
+        "Watch a tank full screen",
+        "V"
+      ],
+      [
+        "Switch tanks / back to the hall",
+        "[ ] / H"
+      ],
+      [
+        "Depth layer while placing",
+        "Q W E"
+      ],
+      [
+        "Zoom / pan a tank",
+        "Wheel / right-drag"
+      ],
+      [
+        "Pause",
+        "Space"
+      ]
+    ],
+    "notes": "progress notes",
+    "notesUrl": "https://github.com/ycgNem/fins-and-fronds/blob/master/PROGRESS.md",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs and aquarium research; pixel art from PixelLab, and the sound synthesized.",
+    "platforms": "Browser (mouse; touch works too)"
+  },
+  {
     "id": "pixel-rts",
     "title": "Pixel RTS",
     "repo": "pixel-rts",
@@ -219,7 +274,7 @@
     "number": "29 techs · 4 eras · 1–6 players",
     "about": [
       "A top-down pixel-art RTS inspired by The Conquerors 3 and Strategema on Roblox. Start with an HQ, mine ore and pump oil, build barracks, factories, airfields and docks, capture and grow cities, and research a tech tree across four eras.",
-      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges. Each player can build 21 buildings plus 4 for every city they hold, and you can sell units back for half their cost.",
+      "Play a skirmish against up to five AIs with four personalities, or play online with friends: the host's browser runs the game and friends join with a room code, peer to peer, with no game server. Land, air and sea units, with a destroyer, battleship and submarine triangle at sea. On Pangaea and Lakes maps, a river splits the players into two sides, crossed by two stone bridges. Each player can build 21 buildings plus 4 for every city they hold, and you can sell units back for half their cost. Two mega units, the Mega Tank and the Mega Plane, top the tech tree, and the Launch Site's rocket counts down on everyone's screen. Six-player presets set up a 3 v 3 or a six-way free-for-all, and a sandbox mode hands everyone unlimited cash, oil and science.",
       "It has twists of its own: a government in exile, a last stand at the HQ, insurgency for knocked-out players, city contract auctions and bounties, coalitions and wanted aces. New players get First Orders, a guide that points at the very next click for the first six steps of any match, or can start with Boot Camp."
     ],
     "controls": [
@@ -259,15 +314,15 @@
     "repo": "foldworks",
     "play": "https://ycgnem.github.io/foldworks/",
     "status": "playtest",
-    "version": "M4",
+    "version": "M6",
     "genre": "Incremental factory builder",
     "session": "Incremental, saves in your browser",
     "pitch": "Build a production line, fold it into a single tile, and build the next, bigger floor out of what you folded. For a frog mayor who really wants Gizmos.",
     "number": "70 s audit → grade S+ to D → one tile",
     "about": [
-      "Start with a hand furnace and an iron ore patch you mine by clicking. Build lines on a grid with miners, belts, smelters, presses and assemblers, and sell what reaches the Dock to Mayor Bramble, a frog who really wants Gizmos.",
+      "Start on a floating island with a hand furnace and a pile of iron ore you mine by clicking. Build lines on a grid with miners, belts, smelters, presses and assemblers, and sell what reaches the Dock to Mayor Bramble, a frog who really wants Gizmos.",
       "The twist is folding. When a line runs well, draw a box around it: a 70-second audit measures what goes in and out and grades it from S+ to D, and the whole line becomes one tile that keeps producing at that rate. Stamp copies, then build the Factory floor out of your folded modules.",
-      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. Right now the Workshop and the Factory are playable through Act II: power grids, bigger machines, Overdrive and the Great Drill. The District and the World floors come next."
+      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. The Workshop and the Factory are playable through Act II, with Reorganize, the first reset: file Patents for your best folds and spend them on a 29-node tree. Time away counts for up to 7 days. The District and the World floors come next."
     ],
     "controls": [
       [
@@ -275,8 +330,8 @@
         "Click"
       ],
       [
-        "Pick from the store",
-        "1–9"
+        "Workbench wheel",
+        "Q or Space, then 1–9"
       ],
       [
         "Rotate / remove",
@@ -296,16 +351,16 @@
       ],
       [
         "Pan / zoom",
-        "WASD / Q, E"
+        "WASD / E, Z"
       ],
       [
         "Pause / help",
-        "Space / /"
+        "P / /"
       ]
     ],
     "notes": "progress notes",
     "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/PROGRESS.md",
-    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art drawn pixel by pixel by Claude in build scripts, and the sound made procedurally.",
+    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus pieces Claude draws pixel by pixel in scripts, and the sound made procedurally.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {

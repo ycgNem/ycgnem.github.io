@@ -10,6 +10,7 @@ The home of ycgNem's games: free browser games built with AI and shown in the op
 | Overgrowth | https://ycgnem.github.io/games/overgrowth/ |
 | Arcwarm | https://ycgnem.github.io/games/arcwarm/ |
 | Verdant Relay | https://ycgnem.github.io/games/verdant-relay/ |
+| Fins & Fronds | https://ycgnem.github.io/games/fins-and-fronds/ |
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Last Watt | https://ycgnem.github.io/games/last-watt/ |
