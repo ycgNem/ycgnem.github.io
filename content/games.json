@@ -220,7 +220,7 @@
     "about": [
       "You get the keys to an empty fish shop. Set up tanks, landscape them with sand, stone, driftwood and plants, and stock them with fish, shrimp, snails and corals. Keep the water right: the game tracks real water chemistry, from the nitrogen cycle to pH, hardness and salinity.",
       "Build a real kind of tank and the game recognizes it, from a community tank to Rio Negro blackwater or a Lake Malawi rock shore, then rates it on wellbeing, habitat, scape, authenticity and spectacle. Visitors pay to see it, though you never see them, only their nose prints on the glass.",
-      "Breed stock to sell, answer letters, and send expeditions to 27 regions for new species. Grow from a Little Fish Shop to a Grand Oceanarium with reefs, kelp towers, jellyfish and big sharks. Press V to watch any tank full screen."
+      "Breed stock to sell, answer letters, and send expeditions to 27 regions for new species. Grow from a Little Fish Shop to a Grand Oceanarium with reefs, kelp towers, jellyfish and big sharks. Name your favorite animals (named ones are never sold), and press V to watch any tank full screen."
     ],
     "controls": [
       [
@@ -246,6 +246,10 @@
       [
         "Depth layer while placing",
         "Q W E"
+      ],
+      [
+        "Tilt rocks and wood",
+        "R / Shift+R"
       ],
       [
         "Zoom / pan a tank",
@@ -314,7 +318,7 @@
     "repo": "foldworks",
     "play": "https://ycgnem.github.io/foldworks/",
     "status": "playtest",
-    "version": "M6",
+    "version": "M14",
     "genre": "Incremental factory builder",
     "session": "Incremental, saves in your browser",
     "pitch": "Build a production line, fold it into a single tile, and build the next, bigger floor out of what you folded. For a frog mayor who really wants Gizmos.",
@@ -322,7 +326,7 @@
     "about": [
       "Start on a floating island with a hand furnace and a pile of iron ore you mine by clicking. Build lines on a grid with miners, belts, smelters, presses and assemblers, and sell what reaches the Dock to Mayor Bramble, a frog who really wants Gizmos.",
       "The twist is folding. When a line runs well, draw a box around it: a 70-second audit measures what goes in and out and grades it from S+ to D, and the whole line becomes one tile that keeps producing at that rate. Stamp copies, then build the Factory floor out of your folded modules.",
-      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. The Workshop and the Factory are playable through Act II, with Reorganize, the first reset: file Patents for your best folds and spend them on a 29-node tree. Time away counts for up to 7 days. The District and the World floors come next."
+      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. All four floors are in: the Workshop, the Factory, the District and the World, across five acts with three reset layers (Reorganize, Relocate and the Last Fold). The long tail adds 205 trophies, 15 Challenges, 8 scenarios, 41 skins and a photo mode, and time away counts for up to 7 days."
     ],
     "controls": [
       [
@@ -354,6 +358,10 @@
         "WASD / E, Z"
       ],
       [
+        "Stuck? / photo mode",
+        "G / H"
+      ],
+      [
         "Pause / help",
         "P / /"
       ]
@@ -361,6 +369,61 @@
     "notes": "progress notes",
     "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/PROGRESS.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus pieces Claude draws pixel by pixel in scripts, and the sound made procedurally.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "stillframe",
+    "title": "Stillframe",
+    "repo": "stillframe",
+    "play": "https://ycgnem.github.io/stillframe/",
+    "status": "playtest",
+    "version": "1.0",
+    "genre": "Top-down time-bending shooter",
+    "session": "40 short levels, saves in your browser",
+    "pitch": "Time moves when you move. Stand still and the world crawls; walk and it runs. Red glass enemies shatter in one hit, and so do you.",
+    "number": "stand still: 3% speed · 5 chapters · 40 levels",
+    "about": [
+      "A top-down pixel-art take on SUPERHOT. Stand still and the world crawls at 3% speed, walk and it runs, and every shot or throw buys a split second of full-speed time. Grab guns, punch, throw whatever is in your hands, and clear each room of red glass enemies that shatter in one hit, just like you.",
+      "Five chapters, 40 levels: office floors, the subway and its trains, rooftops with ledges and a crane, a nightclub that strobes on the beat, and a white void where the rules glitch, each ending in a boss. Every level has 3 stars and a par time, and every clear plays back as a replay.",
+      "Coins for clean, stylish play buy Workshop upgrades that bend the time rule: walk cheaper, dash in zero time, rewind a death. After the story, the Gauntlet sends endless waves through five arenas."
+    ],
+    "controls": [
+      [
+        "Move",
+        "WASD"
+      ],
+      [
+        "Aim",
+        "Mouse"
+      ],
+      [
+        "Shoot, punch, pick up",
+        "Left mouse"
+      ],
+      [
+        "Throw",
+        "Right mouse"
+      ],
+      [
+        "Swap weapon",
+        "Q / wheel"
+      ],
+      [
+        "Dash",
+        "Space"
+      ],
+      [
+        "Restart the level",
+        "R"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/stillframe/blob/main/docs/PATCH_NOTES.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in scripts, and the sound synthesized.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
