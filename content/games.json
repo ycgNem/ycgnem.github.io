@@ -556,5 +556,48 @@
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
     "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Opus from my design docs.",
     "platforms": "Browser, Windows"
+  },
+  {
+    "id": "smeltdown",
+    "title": "Smeltdown",
+    "repo": "smeltdown",
+    "play": "https://ycgnem.github.io/smeltdown/",
+    "status": "prototype",
+    "version": "0.2",
+    "genre": "Roguelike deckbuilder",
+    "session": "Two acts a run, saves between fights",
+    "pitch": "A deckbuilder where your deck is the factory. Machine cards run themselves at the end of every turn and feed what they make into your next hand.",
+    "number": "Ore → Ingot → Steel Blade in one end of turn",
+    "about": [
+      "Machine cards build into your Factory and run at the end of every turn, left to right. Each one takes what the machines to its left just made, then what's in your hand: a Drill Rig digs Ore, a Smelter turns it into Ingots, an Assembler forges a Steel Blade, and it all lands in your next hand on top of your normal draw. Before you end the turn, every machine shows whether it will run and the tray shows what you'll get.",
+      "Machines make Heat. At 5 you're Hot and hit harder; at the top of the gauge you melt down. Enemies fight the factory too: they jam machines, steal from your tray and throw Rust, Burns and Slag into your deck.",
+      "Two acts on branching maps: 61 cards (22 of them machines), 15 enemies including 3 bosses, 27 Parts, shops, rest stops and 9 events. This one is a work in progress, built to find out whether the idea is fun."
+    ],
+    "controls": [
+      [
+        "Play a card",
+        "Click / 1–0"
+      ],
+      [
+        "Pick a target",
+        "Click an enemy or machine"
+      ],
+      [
+        "End the turn",
+        "E"
+      ],
+      [
+        "Cancel",
+        "Esc / right-click"
+      ],
+      [
+        "Reorder machines",
+        "◀ ▶ above each one"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/smeltdown#readme",
+    "madeWith": "TypeScript and the DOM, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus icons and backdrops Claude draws pixel by pixel in scripts, and the sound synthesized.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
   }
 ]
