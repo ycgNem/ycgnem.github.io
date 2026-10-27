@@ -427,6 +427,116 @@
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
+    "id": "formica",
+    "title": "Formica",
+    "repo": "formica",
+    "play": "https://ycgnem.github.io/formica/",
+    "status": "prototype",
+    "version": "1.2",
+    "genre": "Ant colony sim",
+    "session": "Open-ended, saves in your browser",
+    "pitch": "Raise an ant colony from a single queen. Watch it dig, forage, fight and grow, then send out winged queens to found daughter colonies.",
+    "number": "5 ant species · 4 biomes · 9 keeper tools",
+    "about": [
+      "Release a queen on the ground and watch her dig her first chamber. Her workers tunnel out food stores, nurseries, granaries and middens, forage the surface, and age from nurse to builder to forager. You don't control the ants: you keep them, with sugar, mealworms, leaves over the entrance before rain, berry bushes, root aphids and a marker for where to dig.",
+      "Five real species play differently, from tireless black garden ants to carpenter ants, big-headed ants, fire ants that raft their queen out of a flood and honeypot ants that store honey in living workers. Pick a meadow, woodland floor, sandy dunes or riverbank, each with its own soil, weather and danger: antlion pits, centipedes, robins and a summer army-ant raid.",
+      "Survive a winter and the colony raises winged queens and males. After the nuptial flight you can follow a daughter queen to a new patch of ground, with traits she inherits from how her mother's colony lived. Version 1.2, \"Wider World\", added the biomes, pheromone trails, the lineage and the dangers."
+    ],
+    "controls": [
+      [
+        "Use a tool",
+        "Click"
+      ],
+      [
+        "Tools",
+        "V Q W E U R I T Y"
+      ],
+      [
+        "Speed 1× / 3× / 10× / 30×",
+        "1–4"
+      ],
+      [
+        "Pause",
+        "Space"
+      ],
+      [
+        "Follow the selected ant",
+        "F"
+      ],
+      [
+        "Scent and warmth view",
+        "P"
+      ],
+      [
+        "Look around / zoom",
+        "Drag or arrows / wheel"
+      ],
+      [
+        "Photo mode",
+        "H"
+      ]
+    ],
+    "notes": "roadmap",
+    "notesUrl": "https://github.com/ycgNem/formica/blob/main/ROADMAP.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus from real ant biology; pixel art from PixelLab, and the sound synthesized.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "ember",
+    "title": "Ember",
+    "repo": "ember",
+    "play": "https://ycgnem.github.io/ember/",
+    "status": "prototype",
+    "version": "0.1",
+    "genre": "Neon arcade survival",
+    "session": "Short runs, best score saved",
+    "pitch": "Steer a glowing wisp through the void and evolve it. The void evolves too: it breeds enemies that counter the way you play.",
+    "number": "5 sectors · 11 void genes bred against you",
+    "about": [
+      "You're a wisp of light drifting through the dark. Move to steer, pulse to burst the void's creatures, and chain kills into streaks until FEVER kicks in. Between waves, pick an evolution card for your wisp.",
+      "The void learns. A genetic algorithm watches how you play and breeds its next generation against you, raising genes like speed, armor, cloak, swarm and evasion. You can watch it study you in the corner of the screen.",
+      "Fly through five sectors, from the Shallows to the Event Horizon, each with its own hazard and an apex boss at the end. Stardust from every run buys permanent upgrades in the Starforge."
+    ],
+    "controls": [
+      [
+        "Steer",
+        "Mouse"
+      ],
+      [
+        "Pulse",
+        "Click or Space"
+      ],
+      [
+        "Pick an evolution card",
+        "Click or 1–4"
+      ],
+      [
+        "Reroll the cards",
+        "R"
+      ],
+      [
+        "Starforge",
+        "F"
+      ],
+      [
+        "Pause",
+        "P / Esc"
+      ],
+      [
+        "Calm visuals",
+        "C"
+      ],
+      [
+        "Mute",
+        "M"
+      ]
+    ],
+    "notes": "source",
+    "notesUrl": "https://github.com/ycgNem/ember",
+    "madeWith": "TypeScript and WebGL2, no engine. Code written with Claude Opus; the glow comes from a post-processing pipeline, and the music and sound are synthesized.",
+    "platforms": "Browser (mouse and keyboard; touch works too)"
+  },
+  {
     "id": "last-watt",
     "title": "Last Watt",
     "repo": "last-watt",

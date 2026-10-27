@@ -14,6 +14,8 @@ The home of ycgNem's games: free browser games built with AI and shown in the op
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Stillframe | https://ycgnem.github.io/games/stillframe/ |
+| Formica | https://ycgnem.github.io/games/formica/ |
+| Ember | https://ycgnem.github.io/games/ember/ |
 | Last Watt | https://ycgnem.github.io/games/last-watt/ |
 | Slipstream Salvager | https://ycgnem.github.io/games/slipstream-salvager/ |
 | Slipstream Salvager 3D | https://ycgnem.github.io/games/slipstream-salvager-3d/ |
