@@ -427,6 +427,218 @@
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
+    "id": "the-mountain-is-a-machine",
+    "title": "The Mountain Is a Machine",
+    "repo": "the-mountain-is-a-machine",
+    "play": "https://ycgnem.github.io/the-mountain-is-a-machine/",
+    "status": "prototype",
+    "version": "0.2",
+    "genre": "Pixel-art factory game",
+    "session": "Long sessions, 3 save slots in your browser",
+    "pitch": "Run a company dig site at the foot of a mountain that hums. Build belts and machines, fix a giant drill and bore down through six layers to find what's making the noise.",
+    "number": "6 layers · linked by freight elevators",
+    "about": [
+      "You run a company dig site at the foot of Old Thrum. Lay belts, place miners and machines, repair a giant broken drill, and bore down through six layers: the Surface, the Shallows, the Fungal Caverns, the Crystal Depths, the Magma Shelf and the Alien Strata.",
+      "Each layer is its own factory floor, linked to the others by freight elevators, with one strange material and one hazard that you learn to turn into a tool. The Company sends contracts, sells licenses and runs the power line; the Field Manual covers the basics.",
+      "Version 0.2, \"Build it yourself\", starts a new game with only the HQ, a Terminal and a Drill, and walks you through building the first line step by step, with a hint and a map marker for each step."
+    ],
+    "controls": [
+      [
+        "Place, select, drag belts",
+        "Left click / drag"
+      ],
+      [
+        "Cancel, remove",
+        "Right click"
+      ],
+      [
+        "Pan / zoom",
+        "WASD or arrows / wheel"
+      ],
+      [
+        "Rotate / copy",
+        "R / Q"
+      ],
+      [
+        "Remove, excavate, survey",
+        "X / E / F"
+      ],
+      [
+        "Layer up / down",
+        "[ / ]"
+      ],
+      [
+        "Build tabs",
+        "1–5"
+      ],
+      [
+        "Pause / speed",
+        "Space / Tab"
+      ],
+      [
+        "Company / Field Manual",
+        "C / H"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/the-mountain-is-a-machine/blob/main/PATCHNOTES.md",
+    "madeWith": "TypeScript, no engine. Code written with Claude Opus; pixel art from PixelLab, built into one atlas by script.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "last-lighthouse",
+    "title": "The Last Lighthouse",
+    "repo": "last-lighthouse",
+    "play": "https://ycgnem.github.io/last-lighthouse/",
+    "status": "prototype",
+    "version": "Chapter 1",
+    "genre": "First-person action RPG",
+    "session": "Chapter 1, saves in your browser",
+    "pitch": "Keep the last lighthouse in a drowned world. Hook wreckage out of the tide, rebuild the settlement plot by plot, and carry the light out to the wrecks.",
+    "number": "Chapter 1 playable start to finish",
+    "about": [
+      "The sea rose, the great lights hold back the Gloom, and this one is failing. You're its new keeper. The tide brings wreckage into the cove: plank bundles, oil drums, kelp mats, now and then a ship's crate. Throw the salvage hook and reel it in, and at low water tear pieces off the bared wreck field.",
+      "Every ruin has a board. Hand in materials and watch it rise: the forge first, then the jetty and the boat, then the cottages, the net loft and the smokehouse. Fish off the rocks, grill at the hearth, and use build mode to fill the rest with lanterns, fences and benches.",
+      "Restore the lamp and its beam finds the Wreck of the Meridian on a reef, then Saltmere Beacon on a sea stack, where the Wreck Guardian waits. Lose a fight and the tide carries you home, minus 40% of what you were carrying."
+    ],
+    "controls": [
+      [
+        "Move / look",
+        "WASD / mouse"
+      ],
+      [
+        "Jump / dash",
+        "Space / Shift"
+      ],
+      [
+        "Bolt-caster",
+        "Left mouse"
+      ],
+      [
+        "Salvage hook",
+        "Right mouse"
+      ],
+      [
+        "Lantern Flare",
+        "Q"
+      ],
+      [
+        "Interact",
+        "E"
+      ],
+      [
+        "Build mode",
+        "B"
+      ],
+      [
+        "Eat / cycle food",
+        "F / Z"
+      ],
+      [
+        "Journal / pause",
+        "Tab / Esc"
+      ]
+    ],
+    "notes": "milestones",
+    "notesUrl": "https://github.com/ycgNem/last-lighthouse/blob/main/docs/MILESTONES.md",
+    "madeWith": "TypeScript and Three.js. Code written with Claude Opus; the 3D models are built by Blender scripts and exported as glTF.",
+    "platforms": "Browser (desktop, Chrome or Edge, mouse and keyboard)"
+  },
+  {
+    "id": "goblin-pension-plan",
+    "title": "Goblin Pension Plan",
+    "repo": "goblin-pension-plan",
+    "play": "https://ycgnem.github.io/goblin-pension-plan/",
+    "status": "prototype",
+    "version": "M5",
+    "genre": "Top-down pixel action RPG",
+    "session": "Story start, saves in your browser",
+    "pitch": "A low-ranking goblin turns a soggy alcove under the city into a home before the Adventurers' Guild clears it out. Scavenge, fight, sneak and do the paperwork.",
+    "number": "milestones 0–5 built · 6 in progress",
+    "about": [
+      "You're a low-ranking goblin living in a soggy maintenance alcove under the city of Bellmarket. This morning the Adventurers' Guild put your home on its survey list. Only a chartered burrow is off the Guild's books, and charters come from the Goblin Cooperative, with paperwork.",
+      "Scavenge the tunnels, fight with a Scrap Launcher, sneak past adventurers or throw a pebble to send them looking somewhere else, and craft your way to a Burrow that gets cozier as you go.",
+      "Playable today: the title screen and story intro, Grubb's letter, the first adventurer contract and the first Charter steps. Milestone 6 brings the Pumpworks boss, the generator, trading and the first stamp."
+    ],
+    "controls": [
+      [
+        "Move / aim",
+        "WASD / mouse"
+      ],
+      [
+        "Scrap Launcher",
+        "Left mouse"
+      ],
+      [
+        "Charged shot",
+        "Right mouse"
+      ],
+      [
+        "Dodge roll",
+        "Space"
+      ],
+      [
+        "Sneak",
+        "Shift"
+      ],
+      [
+        "Interact",
+        "E"
+      ],
+      [
+        "Eat / throw",
+        "Q / F"
+      ],
+      [
+        "Pack and Charter / map",
+        "Tab / M"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "milestones",
+    "notesUrl": "https://github.com/ycgNem/goblin-pension-plan/blob/main/docs/MILESTONES.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; most of the pixel art from PixelLab, with code-drawn art as the fallback.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "floor-zero",
+    "title": "Floor Zero",
+    "repo": "floor-zero",
+    "play": "https://ycgnem.github.io/floor-zero/",
+    "status": "prototype",
+    "version": "M8",
+    "genre": "First-person delving game",
+    "session": "Chapter 1, saves in your browser",
+    "pitch": "Move to a town on the rim of an impossible shaft and make a living from the dungeon below: mine, fish, forage and fight, and restore the old lifts that lead deeper.",
+    "number": "milestones 0–8 built · chapter 1 playable",
+    "about": [
+      "You move to Bellwether, a town clinging to the rim of an ancient shaft, and apply for a delver's license. Make your living from the dungeon below by mining, fishing, foraging and fighting, with skills that level by doing.",
+      "The dungeon isn't random. It's a place you learn: the good fishing pool, the corridor with the nasty projectile enemies, the mineral your pickaxe can't touch yet. Restore the old lift network and the long walk down becomes your commute.",
+      "Chapter 1 plays from the license test to the deep-lift ceremony. The latest update adds daily conditions on the noticeboard, Town Works projects that change the plaza overnight, new rescues and repairs, and an art overhaul."
+    ],
+    "controls": [
+      [
+        "Move / look",
+        "WASD / mouse"
+      ],
+      [
+        "Interact",
+        "E"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "roadmap",
+    "notesUrl": "https://github.com/ycgNem/floor-zero/blob/main/docs/10-roadmap.md",
+    "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus from my design docs; surface textures made by script.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
     "id": "formica",
     "title": "Formica",
     "repo": "formica",

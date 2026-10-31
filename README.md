@@ -14,6 +14,10 @@ The home of ycgNem's games: free browser games built with AI and shown in the op
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Stillframe | https://ycgnem.github.io/games/stillframe/ |
+| The Mountain Is a Machine | https://ycgnem.github.io/games/the-mountain-is-a-machine/ |
+| The Last Lighthouse | https://ycgnem.github.io/games/last-lighthouse/ |
+| Goblin Pension Plan | https://ycgnem.github.io/games/goblin-pension-plan/ |
+| Floor Zero | https://ycgnem.github.io/games/floor-zero/ |
 | Formica | https://ycgnem.github.io/games/formica/ |
 | Ember | https://ycgnem.github.io/games/ember/ |
 | Last Watt | https://ycgnem.github.io/games/last-watt/ |
