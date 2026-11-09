@@ -167,13 +167,13 @@
     "status": "playtest",
     "version": "0.1",
     "genre": "Scavenge-and-defend roguelite",
-    "session": "Up to six nights",
+    "session": "4-night runs, about 35 minutes",
     "pitch": "Scavenge by day. Hold the line by night. Loot an overgrown city, then defend the Relay with what you brought home.",
-    "number": "6 nights · loot only counts if you extract",
+    "number": "4 nights · loot only counts if you get home",
     "about": [
-      "You are a scavenger supplying Verdant Relay, a power-and-comms hub built into an overgrown transit station. By day you head out into a district: finish its objective, grab loot, then hold E in the extraction zone. Loot only counts if you get out.",
-      "By night you defend the Relay. Build towers on glowing pads, read the wave preview, and spend Intel to decrypt or sabotage what's coming. Survive six nights; the Canopy Colossus attacks on the last one. Research Data from every run buys permanent unlocks.",
-      "Stage 9 added real quests with a tracker and an arrow, skillful day combat (roll, deflect, punish openings), wooden bridges across the rivers, and towers you can build on any free tile at night."
+      "You are a scavenger supplying Verdant Relay, a power-and-comms hub built into an overgrown transit station. By day you head into the jungle with a machete: finish the day's quest, grab loot and blueprints, then get home before sunset. Loot only counts if you get home, and after dark it's worth 1.5 times as much, if you dare to stay out.",
+      "By night you defend the Relay with towers on glowing pads, and you're on the board yourself: swing, roll, deflect and hold E at a tower to overcharge it. A run is 4 nights, and the Canopy Colossus attacks on the last one. Research from every run buys permanent unlocks, and feats open four scavengers and eight legendary relics.",
+      "The signal update gave the game an ending: kill the five area bosses across your runs, build the Uplink, and hold its signal through the Colossus. It also made runs shorter, the first run simpler, and cut a lot of reading."
     ],
     "controls": [
       [
@@ -181,15 +181,19 @@
         "WASD / mouse"
       ],
       [
-        "Fire / melee",
+        "Machete / heavy chop",
         "Left / right mouse"
       ],
       [
-        "Dodge",
+        "Dodge roll",
         "Space"
       ],
       [
-        "Interact (hold)",
+        "Throw the machete",
+        "F"
+      ],
+      [
+        "Interact, overcharge (hold)",
         "E"
       ],
       [
@@ -197,13 +201,17 @@
         "Click a pad, or 1–6"
       ],
       [
-        "Start wave",
-        "Space"
+        "Relay Protocols",
+        "Q / R / C"
+      ],
+      [
+        "Big map / pause",
+        "Tab / Esc"
       ]
     ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/verdant-relay#readme",
-    "madeWith": "JavaScript and Three.js, rendered as pixel art. Code written with Claude Opus from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/verdant-relay/blob/main/PATCH_NOTES.md",
+    "madeWith": "JavaScript moving to TypeScript, and Three.js, rendered as pixel art. Code written with Claude Opus from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
     "platforms": "Browser (desktop, keyboard and mouse)"
   },
   {
@@ -318,7 +326,7 @@
     "repo": "foldworks",
     "play": "https://ycgnem.github.io/foldworks/",
     "status": "playtest",
-    "version": "M14",
+    "version": "Playability Update",
     "genre": "Incremental factory builder",
     "session": "Incremental, saves in your browser",
     "pitch": "Build a production line, fold it into a single tile, and build the next, bigger floor out of what you folded. For a frog mayor who really wants Gizmos.",
@@ -326,7 +334,7 @@
     "about": [
       "Start on a floating island with a hand furnace and a pile of iron ore you mine by clicking. Build lines on a grid with miners, belts, smelters, presses and assemblers, and sell what reaches the Dock to Mayor Bramble, a frog who really wants Gizmos.",
       "The twist is folding. When a line runs well, draw a box around it: a 70-second audit measures what goes in and out and grades it from S+ to D, and the whole line becomes one tile that keeps producing at that rate. Stamp copies, then build the Factory floor out of your folded modules.",
-      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. All four floors are in: the Workshop, the Factory, the District and the World, across five acts with three reset layers (Reorganize, Relocate and the Last Fold). The long tail adds 205 trophies, 15 Challenges, 8 scenarios, 41 skins and a photo mode, and time away counts for up to 7 days."
+      "Every machine says what it's waiting for, so a jam is a puzzle, not a mystery. Five acts take you from the Workshop to the Factory, the District, the World and Beyond, with three resets you choose (Reorganize, Relocate and the Last Fold). The Playability Update makes folding the second research, so your first fold comes in about 5 minutes, ends the story at the Floating City with credits, and opens Challenges and Scenarios after it."
     ],
     "controls": [
       [
@@ -350,24 +358,24 @@
         "Tab"
       ],
       [
-        "Research / orders",
-        "T / O"
+        "Research / orders / modules",
+        "T / O / I"
       ],
       [
         "Pan / zoom",
-        "WASD / E, Z"
+        "WASD or drag / E, Z"
       ],
       [
-        "Stuck? / photo mode",
+        "Stuck? / hide the HUD",
         "G / H"
       ],
       [
-        "Pause / help",
+        "Pause / options",
         "P / /"
       ]
     ],
-    "notes": "progress notes",
-    "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/PROGRESS.md",
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/docs/patch-notes.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus pieces Claude draws pixel by pixel in scripts, and the sound made procedurally.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
@@ -425,6 +433,108 @@
     "notesUrl": "https://github.com/ycgNem/stillframe/blob/main/docs/PATCH_NOTES.md",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in scripts, and the sound synthesized.",
     "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "dumpster-alchemy",
+    "title": "Dumpster Alchemy",
+    "repo": "dumpster-alchemy",
+    "play": "https://ycgnem.github.io/dumpster-alchemy/",
+    "status": "prototype",
+    "version": "2.0",
+    "genre": "Merge game",
+    "session": "10-night runs, or the Daily Dump",
+    "pitch": "Run the night shift at a raccoon-run landfill. Merge junk into better junk, keep the stink down, and build the Trash King.",
+    "number": "20 recipes · 10 nights · 3 bosses",
+    "about": [
+      "Drag junk onto matching junk to merge it up the chain, and feed the raccoons' orders before the stink builds up. Junk left sitting goes smelly, so keep it moving and hit the night's quota before 6 AM.",
+      "Drop different junk together to brew one of 20 recipes: a boot and a tire make a Monster Truck Shoe. Tools like Electric Soup and the Junk Magnet help, cascades and the Stench Streak build up to a Raccoon Rave where everything pays triple.",
+      "Version 2.0, \"The County Run\", makes a run 10 nights across Lot 9, the Marina and Mount Trashmore, with a map where every road forks, rule-bending Contraband and three boss nights. Or play the Daily Dump."
+    ],
+    "controls": [
+      [
+        "Merge, brew, deliver",
+        "Drag"
+      ],
+      [
+        "Dumpster",
+        "Click it or Space"
+      ],
+      [
+        "Clock out",
+        "C"
+      ],
+      [
+        "Pause",
+        "P / Esc"
+      ],
+      [
+        "Mute",
+        "M"
+      ],
+      [
+        "Full screen",
+        "F"
+      ]
+    ],
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/dumpster-alchemy/blob/main/CHANGELOG.md",
+    "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; pixel art drafted with PixelLab and finished by script, and every sound synthesized.",
+    "platforms": "Browser (mouse or touch; phones in landscape)"
+  },
+  {
+    "id": "nobody-mention-the-moon",
+    "title": "Nobody Mention the Moon",
+    "repo": "nobody-mention-the-moon",
+    "play": "https://ycgnem.github.io/nobody-mention-the-moon/",
+    "status": "prototype",
+    "version": "M8",
+    "genre": "Co-op dinner party",
+    "session": "One dinner, about 15 minutes",
+    "pitch": "Cater a dinner party where every guest is a monster pretending to be human, and they all think you're a legendary monster too. Whatever you do, don't say \"moon\" near the werewolf.",
+    "number": "8 monster types · 3 houses · 1–6 hosts",
+    "about": [
+      "You and your friends are the only humans in the house. The guests are monsters in disguise, and every one of them thinks you're a legendary monster too. Cook the courses, seat the guests, and steer the small talk without blowing your cover. You don't know who the vampire is until somebody serves the garlic bread.",
+      "Your voice is a controller: some words set guests off, and saying one within earshot counts, meant or not. Lies become house rules, so tell the ghost you don't do mirrors either and nobody on your team can go near the bathroom. If you're found out, it isn't a game-over screen. It's a chase to the van.",
+      "Three houses, 8 monster types, 7 occasions and 10 events are built. The web version is solo only for now: online dinners for up to 6 need a game server that isn't hosted yet, and the multiplayer still needs real playtests with friends."
+    ],
+    "controls": [
+      [
+        "Move / look",
+        "WASD / mouse"
+      ],
+      [
+        "Use, pick up / drop",
+        "E / Q"
+      ],
+      [
+        "Throw",
+        "Hold click"
+      ],
+      [
+        "Small Talk",
+        "Right-click or 1–3"
+      ],
+      [
+        "Seat a guest",
+        "G"
+      ],
+      [
+        "Talk / say by text",
+        "V / Enter"
+      ],
+      [
+        "Rumor Ledger",
+        "Tab"
+      ],
+      [
+        "Overhead view",
+        "O"
+      ]
+    ],
+    "notes": "milestones",
+    "notesUrl": "https://github.com/ycgNem/nobody-mention-the-moon/blob/main/docs/MILESTONES.md",
+    "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus; every 3D model built by Blender Python scripts, with Colyseus for online play and on-device word spotting for the trigger words.",
+    "platforms": "Browser (desktop, mouse and keyboard; solo for now)"
   },
   {
     "id": "the-mountain-is-a-machine",
@@ -550,15 +660,15 @@
     "repo": "goblin-pension-plan",
     "play": "https://ycgnem.github.io/goblin-pension-plan/",
     "status": "prototype",
-    "version": "M5",
+    "version": "Chapter 2",
     "genre": "Top-down pixel action RPG",
-    "session": "Story start, saves in your browser",
+    "session": "Two chapters, saves in your browser",
     "pitch": "A low-ranking goblin turns a soggy alcove under the city into a home before the Adventurers' Guild clears it out. Scavenge, fight, sneak and do the paperwork.",
-    "number": "milestones 0–5 built · 6 in progress",
+    "number": "2 chapters · a pension box with 6 rungs",
     "about": [
       "You're a low-ranking goblin living in a soggy maintenance alcove under the city of Bellmarket. This morning the Adventurers' Guild put your home on its survey list. Only a chartered burrow is off the Guild's books, and charters come from the Goblin Cooperative, with paperwork.",
       "Scavenge the tunnels, fight with a Scrap Launcher, sneak past adventurers or throw a pebble to send them looking somewhere else, and craft your way to a Burrow that gets cozier as you go.",
-      "Playable today: the title screen and story intro, Grubb's letter, the first adventurer contract and the first Charter steps. Milestone 6 brings the Pumpworks boss, the generator, trading and the first stamp."
+      "Chapter Two is the Pension Plan: work orders from Grubb's in-tray, permits for Proper Walls, Indoor Plumbing and a Four-Poster, each one changing how the Burrow looks and sounds, all the way to Retirement Day. A playability pass also made the first trip fairer and added a guide line that names your next step."
     ],
     "controls": [
       [
@@ -699,15 +809,15 @@
     "repo": "ember",
     "play": "https://ycgnem.github.io/ember/",
     "status": "prototype",
-    "version": "0.1",
+    "version": "1.0",
     "genre": "Neon arcade survival",
     "session": "Short runs, best score saved",
-    "pitch": "Steer a glowing wisp through the void and evolve it. The void evolves too: it breeds enemies that counter the way you play.",
-    "number": "5 sectors · 11 void genes bred against you",
+    "pitch": "Steer a glowing wisp through the void and evolve it. The void evolves too: it watches how you kill and grows an answer to it.",
+    "number": "5 sectors · the void answers how you kill",
     "about": [
-      "You're a wisp of light drifting through the dark. Move to steer, pulse to burst the void's creatures, and chain kills into streaks until FEVER kicks in. Between waves, pick an evolution card for your wisp.",
-      "The void learns. A genetic algorithm watches how you play and breeds its next generation against you, raising genes like speed, armor, cloak, swarm and evasion. You can watch it study you in the corner of the screen.",
-      "Fly through five sectors, from the Shallows to the Event Horizon, each with its own hazard and an apex boss at the end. Stardust from every run buys permanent upgrades in the Starforge."
+      "You're a wisp of light drifting through the dark. Move to steer, pulse to burst the void's creatures, close loops with your burning trail, and light FEVER when it's ready. Mutations grow you into a Wisp, then a Flame, and every apex you slay evolves you further.",
+      "The void learns. Kill with the pulse and it grows shells, kill with loops and it grows wards, and every answer it grows names its counter. Split your kills so no weapon makes 60% of them and the void can't read you. It remembers you between runs, and the title shows what it holds.",
+      "Fly through five sectors, from the Shallows to the Event Horizon, each with an apex boss at the end. Version 1.0, \"The Void's Turn\", added the void's answers, earned forms, a kill-cam and run history, and icons for every mutation."
     ],
     "controls": [
       [
@@ -719,33 +829,33 @@
         "Click or Space"
       ],
       [
+        "Light FEVER",
+        "Right-click, E or Shift"
+      ],
+      [
         "Pick an evolution card",
         "Click or 1–4"
       ],
       [
-        "Reroll the cards",
-        "R"
+        "Reroll / disrupt",
+        "R / D"
       ],
       [
         "Starforge",
         "F"
       ],
       [
-        "Pause",
-        "P / Esc"
+        "Pause / mute",
+        "P / M"
       ],
       [
         "Calm visuals",
         "C"
-      ],
-      [
-        "Mute",
-        "M"
       ]
     ],
-    "notes": "source",
-    "notesUrl": "https://github.com/ycgNem/ember",
-    "madeWith": "TypeScript and WebGL2, no engine. Code written with Claude Opus; the glow comes from a post-processing pipeline, and the music and sound are synthesized.",
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/ember/blob/main/PATCH_NOTES.md",
+    "madeWith": "TypeScript and WebGL2, no engine. Code written with Claude Opus; mutation icons from PixelLab, the glow from a post-processing pipeline, and the music and sound synthesized.",
     "platforms": "Browser (mouse and keyboard; touch works too)"
   },
   {

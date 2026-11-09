@@ -13,6 +13,13 @@
       "link": "/devlog/fins-and-fronds/"
     },
     {
+      "game": "verdant-relay",
+      "kicker": "The signal update",
+      "short": "It has an ending now",
+      "image": "/assets/games/verdant-relay/cover.webp",
+      "link": "/devlog/the-signal-update-and-more/"
+    },
+    {
       "game": "overgrowth",
       "kicker": "1.0.3: Iron and Order",
       "short": "1.0.3 is out",
@@ -25,13 +32,6 @@
       "short": "A merchant ship calls",
       "image": "/assets/games/sprocket-and-sprout/cover.webp",
       "link": "/devlog/sprocket-2-1/"
-    },
-    {
-      "game": "pixel-rts",
-      "kicker": "Up to six players online",
-      "short": "Mega units and a rocket",
-      "image": "/assets/games/pixel-rts/cover.webp",
-      "link": "/games/pixel-rts/"
     }
   ],
   "_socials_help": "Paste each profile URL once the account exists. Empty ones are hidden on the site.",

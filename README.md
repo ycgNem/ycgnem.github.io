@@ -14,6 +14,8 @@ The home of ycgNem's games: free browser games built with AI and shown in the op
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Stillframe | https://ycgnem.github.io/games/stillframe/ |
+| Dumpster Alchemy | https://ycgnem.github.io/games/dumpster-alchemy/ |
+| Nobody Mention the Moon | https://ycgnem.github.io/games/nobody-mention-the-moon/ |
 | The Mountain Is a Machine | https://ycgnem.github.io/games/the-mountain-is-a-machine/ |
 | The Last Lighthouse | https://ycgnem.github.io/games/last-lighthouse/ |
 | Goblin Pension Plan | https://ycgnem.github.io/games/goblin-pension-plan/ |
