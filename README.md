@@ -14,6 +14,7 @@ The home of ycgNem's games: free browser games, built in the open.
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Stillframe | https://ycgnem.github.io/games/stillframe/ |
+| Grand Line Dojo | https://ycgnem.github.io/games/grand-line-dojo/ |
 | Deepwick | https://ycgnem.github.io/games/deepwick/ |
 | Aldervale | https://ycgnem.github.io/games/aldervale/ |
 | Dumpster Alchemy | https://ycgnem.github.io/games/dumpster-alchemy/ |

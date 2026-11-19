@@ -442,6 +442,47 @@
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {
+    "id": "grand-line-dojo",
+    "title": "Grand Line Dojo",
+    "repo": "grand-line-dojo",
+    "play": "https://ycgnem.github.io/grand-line-dojo/",
+    "status": "prototype",
+    "version": "early",
+    "genre": "Card game trainer",
+    "session": "One match at a time, progress saves in your browser",
+    "pitch": "An unofficial, fan-made trainer for the One Piece Card Game. Play the ST-30 \"Luffy & Ace\" starter deck against the CPU, with a coach that explains every decision.",
+    "number": "24 lessons · 6 CPU decks · 2,980 cards in the library",
+    "about": [
+      "Single player, against a CPU. You play the ST-30 \"Luffy & Ace\" starter deck against six CPU starter decks, one of each colour, on Easy, Normal or Hard. Every rule is enforced, every action is explained in the log, and you can take moves back. With full coaching on, the coach suggests a move at every decision and says why.",
+      "Learn has 24 lessons in four tracks: the rules, playing well, building decks and competing. Each ends with a short quiz, and there are endless counter-maths and lethal drills. The Card Library lists all 2,980 cards as text with notes on how each is used. Deck Lab lets you build a list, checks it against the construction rules and lets you test it against the CPU.",
+      "What it can't do: 1,232 of the 2,980 cards (41%) can be played in matches, and the rest are reference-only because their effects are too complex for the engine. The CPU is rule-based, a sparring partner for fundamentals and not a tournament opponent. Card data is a snapshot, so check the official card list and banned list before an event.",
+      "This is an unofficial fan project. ONE PIECE CARD GAME and all card names and card text belong to their respective owners, and this is not affiliated with or endorsed by them. Every picture is an original drawing made for this project; no official card artwork is used."
+    ],
+    "controls": [
+      [
+        "Play a card, attack, use an ability",
+        "Click the card"
+      ],
+      [
+        "Read a card",
+        "Click it"
+      ],
+      [
+        "Ask the coach",
+        "Hint"
+      ],
+      [
+        "Undo a move",
+        "Take back"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/grand-line-dojo#readme",
+    "madeWith": "TypeScript and Vite, no engine, with tests for the rules, the CPU and the content. Code written with Claude Fable; every picture is an original drawing made for the project.",
+    "platforms": "Browser (desktop, mouse)",
+    "accent": "#e5b161"
+  },
+  {
     "id": "deepwick",
     "title": "Deepwick",
     "repo": "deepwick",
@@ -451,23 +492,24 @@
     "genre": "2D survival and mining",
     "session": "Open-ended, saves automatically",
     "pitch": "You wake in a meadow with nothing. Punch a tree, build a shelter before the first night, then dig down through a mountain full of tunnels to whatever is drinking the light.",
-    "number": "5 cave layers · 13 creatures · 5 crafting stations",
+    "number": "5 cave layers · 7 fish to catch · 5 crafting stations",
     "about": [
       "No pick, no lantern, no food. Just a valley of trees, a mountain full of tunnels, and the old mining town of Deepwick long gone quiet. Punch a tree, build a workbench, and make a pick, a shelter, a door and a bed before the first night falls, because when the sun sets the Hollows climb out. They burn at dawn.",
       "Then go down. Smelt ore, forge better tools at the anvil, cook at the fire, and find the heart crystals and relics buried in the dark, from the Topsoil Tunnels through the Mossroot Grotto, the Crystal Hollows and the Ember Depths to the Sunless Vault. Somewhere under all of it, the Gloamheart is beating.",
-      "Build deeds and settlers come: Pell to trade, Brannoc to sharpen your steel, Wren to read the relics. The latest update was a survival overhaul: you start with nothing, there's a day and night cycle, hunger and farming, a 40-slot pack and a wider world with natural cave mouths."
+      "Build deeds and settlers come: Pell to trade, Brannoc to sharpen your steel, Wren to read the relics. The old Deepwick mines are still down there: timbered shafts, ladders, rails, hanging lamps and minecarts you can ride. Forge a grappling hook at the anvil for the drops you can't climb.",
+      "The newest update added water. There are ponds in the meadow and pools in the caves, you can swim, and water runs into the holes you dig and turns lava to obsidian. Make a fishing rod at the workbench and there are seven fish to catch depending on where you cast, plus junk and the odd sunken purse."
     ],
     "controls": [
       [
-        "Move / jump",
+        "Move / jump or swim up",
         "A D / Space"
       ],
       [
-        "Climb ladders",
+        "Climb ladders and ropes",
         "W / S"
       ],
       [
-        "Dig, chop, attack, place, eat",
+        "Dig, chop, attack, place, eat, cast",
         "Left mouse"
       ],
       [
@@ -479,8 +521,16 @@
         "1–0 or wheel"
       ],
       [
-        "Talk / interact",
+        "Drop the held stack",
+        "Q"
+      ],
+      [
+        "Talk, interact, ride a minecart",
         "E"
+      ],
+      [
+        "Grappling hook",
+        "G"
       ],
       [
         "Lamp oil / tonic / recall to bed",
@@ -499,7 +549,7 @@
     "notesUrl": "https://github.com/ycgNem/deepwick",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; pixel art from PixelLab, packed into sprite sheets by script.",
     "platforms": "Browser (desktop, mouse and keyboard)",
-    "accent": "#e58a61"
+    "accent": "#e59561"
   },
   {
     "id": "aldervale",
@@ -507,47 +557,51 @@
     "repo": "aldervale",
     "play": "https://ycgnem.github.io/aldervale/",
     "status": "prototype",
-    "version": "0.1",
+    "version": "Steward's Year",
     "genre": "First-person farming",
-    "session": "Open-ended, saves in your browser",
-    "pitch": "Farm for the castle on the hill. Grow the crops, mill the flour, bake the bread, and fill the royal requisitions to turn a little plot into the finest farm in the valley.",
-    "number": "3 crops to start · requisitions pinned to the board",
+    "session": "5 chapters, saves in your browser",
+    "pitch": "The Crown has given you the wild old homestead below Aldervale Castle. Clear the land, raise a mill, keep hens and bake for the castle, and supply the first Harvest Feast in a generation.",
+    "number": "5 chapters · 5 crops · 6 tools",
     "about": [
-      "High on the western hill stands Aldervale Castle, and its kitchens are always hungry. You're the steward of a small homestead below it. Hoe the plots, sow wheat, tomatoes and pumpkins, water them, and carry the harvest in your basket.",
-      "The castle's requests are pinned to the board: the Royal Kitchens, Head Cook Marigold and the Steward of Aldervale each want something. Fill a requisition and Pip the courier takes it up the hill for coin and Royal Favour.",
-      "Favour and coin go back into the farm: production buildings that mill and bake, and new fields to expand into. It's an early build with a first loop to try."
+      "Aldervale Castle's larders are bare after a hard winter, and the Crown has handed you Brookhollow Farm, the homestead below it that has lain wild since Old Tom laid down his hoe. Pip the courier waits by the road with a pony and wagon to show you the way of things.",
+      "The year runs in five chapters, from The Steward Arrives to The Harvest Feast. Each one opens with a letter and a list of things to do: clear the land by hand with an axe and a pick, raise the mill, keep hens, bake in the bakehouse oven. The castle's commissions get packed into a crate, and Pip drives them up the hill.",
+      "Along the way there's Wren's stall for seeds, upgrades and selling, carrots and cabbages beside the wheat, tomatoes and pumpkins, apple trees, compost, rain, and a bed to sleep in. This update replaced the old order board, XP levels and production queues with the story."
     ],
     "controls": [
       [
-        "Walk / run",
-        "WASD / Shift"
+        "Walk / run / jump",
+        "WASD / Shift / Space"
       ],
       [
-        "Hoe, seeds, watering can, basket",
-        "1–4"
+        "Hoe, seed bag, watering can, basket, axe, pick",
+        "1–6 or wheel"
       ],
       [
         "Switch seed",
         "Q"
       ],
       [
-        "Use the tool",
+        "Use the tool (hold to work along a row)",
         "Click"
       ],
       [
-        "Talk, open, build",
+        "Talk, open, pack, build",
         "E"
+      ],
+      [
+        "Journal / music",
+        "J / M"
       ],
       [
         "Pause",
         "Esc"
       ]
     ],
-    "notes": "source",
-    "notesUrl": "https://github.com/ycgNem/aldervale",
-    "madeWith": "TypeScript and Three.js. Code written with Claude Opus; every model built in Blender from Python scripts, and the textures generated by script.",
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/aldervale#readme",
+    "madeWith": "TypeScript and Three.js. Code written with Claude Opus; every model built in Blender from Python scripts, the textures generated by script and the sound synthesized.",
     "platforms": "Browser (desktop, mouse and keyboard)",
-    "accent": "#99e561"
+    "accent": "#97e561"
   },
   {
     "id": "dumpster-alchemy",

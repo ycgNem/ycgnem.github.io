@@ -35,10 +35,10 @@
     },
     {
       "game": "deepwick",
-      "kicker": "New prototype",
-      "short": "New: dig five layers down",
+      "kicker": "Mines, minecarts and fishing",
+      "short": "Now with minecarts and fishing",
       "image": "/assets/games/deepwick/cover.webp",
-      "link": "/devlog/overgrowth-1-2-and-two-new-games/"
+      "link": "/devlog/deepwick-mines-aldervale-story-and-a-card-trainer/"
     }
   ],
   "_socials_help": "Paste each profile URL once the account exists. Empty ones are hidden on the site.",
