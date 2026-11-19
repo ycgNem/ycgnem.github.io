@@ -54,7 +54,7 @@
     "repo": "overgrowth",
     "play": "https://ycgnem.github.io/overgrowth/",
     "status": "playtest",
-    "version": "1.0.3",
+    "version": "1.2.1",
     "genre": "First-person gather, craft and defend",
     "session": "A 10-night run, saves every morning",
     "pitch": "Raid the jungle by day and carry home what you can. Hold the Heartwood by night. Survive ten nights and find out what happened to the 1931 expedition.",
@@ -62,8 +62,8 @@
     "about": [
       "By day you hack through the jungle with a machete, forage the forest floor, and search old camps, wrecks, temples and root caches for what's inside. Everything you carry weighs something, so you choose what to bring home before dusk. At camp you craft it into towers, barricades and traps at the Workbench, Fire Pit and Tinker's Bench, and build them around the Heartwood, the glowing shrine at your camp.",
       "At dusk the Blight crawls out of rifts in the forest and looks for the side your towers cover least. The Heartwood can only feed so many roots, so every defence is a budget call, and each kind of Blight shrugs off some damage types and breaks under others. Hold until dawn. Each night is harder, every fifth night brings a boss, and the Rot Mother comes on night 10. Endless mode keeps going after that.",
-      "Along the way came Blight Blooms that open new lanes unless you cut them down (0.6), three difficulties and a Field Guide (0.7), and the drowned grove, a second region of black water and mangroves with its own rift (0.9).",
-      "1.0, \"The Lost Expedition\", turned the day into a scavenging run and added a story: twelve torn pages from a 1931 expedition, three seals that put rifts to sleep, grafts for your towers, a radio that calls supply drops, the Rot spreading from the rifts, and two endings. It also added key rebinding, captions, colour-blind outlines, partial gamepad support, twenty achievements and a daily vigil. Since then, 1.0.1 halved what everything weighs, 1.0.2 got rid of the random freezes, and 1.0.3 made the satchel drag-and-drop, lets you clad the Coffer in iron and brass for up to 120 slots, and made the Blight a fifth tougher."
+      "1.0, \"The Lost Expedition\", turned the day into a scavenging run and added a story: twelve torn pages from a 1931 expedition, three seals that put rifts to sleep, grafts for your towers, a radio that calls supply drops, and two endings. It also added key rebinding, captions, colour-blind outlines, partial gamepad support, twenty achievements and a daily vigil.",
+      "1.1, \"New Growth\", rebuilt the trees and remodelled the Wisp, Husk and Rot Mother while drawing about a third of the triangles. 1.2, \"Hold Fast\", fixed everything a full playthrough review found: the machete now answers every click, giants have buttresses and strangler figs, Continue picks up at the hour you left, and six bow towers can no longer hold night 10 alone. 1.2.1 replaced the droning night music with cues and silence."
     ],
     "controls": [
       [
@@ -109,7 +109,7 @@
     ],
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/overgrowth/blob/main/CHANGELOG.md",
-    "madeWith": "JavaScript and Three.js. Code written with Claude Opus; surfaces and foliage generated with Flux, the hero models built in Blender from Python scripts, and the sound synthesized live.",
+    "madeWith": "JavaScript moving to TypeScript, and Three.js. Code written with Claude; surfaces and foliage generated with Flux, the hero models built in Blender from Python scripts, and the sound synthesized live.",
     "platforms": "Browser (desktop, keyboard and mouse; partial gamepad)"
   },
   {
@@ -220,7 +220,7 @@
     "repo": "fins-and-fronds",
     "play": "https://ycgnem.github.io/fins-and-fronds/",
     "status": "playtest",
-    "version": "0.1",
+    "version": "0.3",
     "genre": "Cozy aquarium tycoon",
     "session": "Open-ended, saves in your browser",
     "pitch": "Scape, stock and care for every real kind of aquarium, from Iwagumi stone gardens to Malawi rockwork and reefs, and grow a little fish shop into a grand oceanarium.",
@@ -228,7 +228,7 @@
     "about": [
       "You get the keys to an empty fish shop. Set up tanks, landscape them with sand, stone, driftwood and plants, and stock them with fish, shrimp, snails and corals. Keep the water right: the game tracks real water chemistry, from the nitrogen cycle to pH, hardness and salinity.",
       "Build a real kind of tank and the game recognizes it, from a community tank to Rio Negro blackwater or a Lake Malawi rock shore, then rates it on wellbeing, habitat, scape, authenticity and spectacle. Visitors pay to see it, though you never see them, only their nose prints on the glass.",
-      "Breed stock to sell, answer letters, and send expeditions to 27 regions for new species. Grow from a Little Fish Shop to a Grand Oceanarium with reefs, kelp towers, jellyfish and big sharks. Name your favorite animals (named ones are never sold), and press V to watch any tank full screen."
+      "Breed stock to sell, send expeditions to 27 regions for new species, and grow from a Little Fish Shop to a Grand Oceanarium with reefs, kelp towers, jellyfish, rays and big sharks. Version 0.3 added an ending, letters that write back and leave keepsakes, a week with a market day and a school trip, and conservation projects. Name your favorite animals (named ones are never sold), and press V to watch any tank full screen."
     ],
     "controls": [
       [
@@ -268,8 +268,8 @@
         "Space"
       ]
     ],
-    "notes": "progress notes",
-    "notesUrl": "https://github.com/ycgNem/fins-and-fronds/blob/master/PROGRESS.md",
+    "notes": "patch notes",
+    "notesUrl": "https://github.com/ycgNem/fins-and-fronds/blob/master/CHANGELOG.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs and aquarium research; pixel art from PixelLab, and the sound synthesized.",
     "platforms": "Browser (mouse; touch works too)"
   },
@@ -432,6 +432,163 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/stillframe/blob/main/docs/PATCH_NOTES.md",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in scripts, and the sound synthesized.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "deepwick",
+    "title": "Deepwick",
+    "repo": "deepwick",
+    "play": "https://ycgnem.github.io/deepwick/",
+    "status": "prototype",
+    "version": "early",
+    "genre": "2D survival and mining",
+    "session": "Open-ended, saves automatically",
+    "pitch": "You wake in a meadow with nothing. Punch a tree, build a shelter before the first night, then dig down through a mountain full of tunnels to whatever is drinking the light.",
+    "number": "5 cave layers · 13 creatures · 5 crafting stations",
+    "about": [
+      "No pick, no lantern, no food. Just a valley of trees, a mountain full of tunnels, and the old mining town of Deepwick long gone quiet. Punch a tree, build a workbench, and make a pick, a shelter, a door and a bed before the first night falls, because when the sun sets the Hollows climb out. They burn at dawn.",
+      "Then go down. Smelt ore, forge better tools at the anvil, cook at the fire, and find the heart crystals and relics buried in the dark, from the Topsoil Tunnels through the Mossroot Grotto, the Crystal Hollows and the Ember Depths to the Sunless Vault. Somewhere under all of it, the Gloamheart is beating.",
+      "Build deeds and settlers come: Pell to trade, Brannoc to sharpen your steel, Wren to read the relics. The latest update was a survival overhaul: you start with nothing, there's a day and night cycle, hunger and farming, a 40-slot pack and a wider world with natural cave mouths."
+    ],
+    "controls": [
+      [
+        "Move / jump",
+        "A D / Space"
+      ],
+      [
+        "Climb ladders",
+        "W / S"
+      ],
+      [
+        "Dig, chop, attack, place, eat",
+        "Left mouse"
+      ],
+      [
+        "Open, use, pick berries",
+        "Right mouse"
+      ],
+      [
+        "Hotbar",
+        "1–0 or wheel"
+      ],
+      [
+        "Talk / interact",
+        "E"
+      ],
+      [
+        "Lamp oil / tonic / recall to bed",
+        "F / H / R"
+      ],
+      [
+        "Pack and crafting / map",
+        "Tab / M"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "source",
+    "notesUrl": "https://github.com/ycgNem/deepwick",
+    "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; pixel art from PixelLab, packed into sprite sheets by script.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "bullshit-golf",
+    "title": "Bullshit Golf",
+    "repo": "bullshit-golf",
+    "play": "https://ycgnem.github.io/bullshit-golf/",
+    "status": "prototype",
+    "version": "0.1",
+    "genre": "3D golf where you cheat",
+    "session": "Two holes, a few minutes a round",
+    "pitch": "The golf is played straight: real ball flight and a swing you make with the mouse. Then you cheat. Bend the ball in mid-air while the course marshal isn't looking.",
+    "number": "2 holes · 100 suspicion and you're disqualified",
+    "about": [
+      "The golf is real: drag and lift on the ball, turf that bounces and checks, greens that break, and a swing you make with the mouse. Pull back, push through, and a launch monitor judges your path, contact and tempo. Swing out to the right and it draws; snatch it and you thin it.",
+      "Then you cheat. Hold a key while the ball is in the air and time slows while you put spin on a ball you've already hit. Before every hole your caddie offers three cheat cards: a cup three times wider, sprinklers on the green, a golf cart parked behind the pin.",
+      "The marshal's eye is in the corner. Cheat while he's looking away and it costs a little suspicion. Cheat while he's watching and it costs a lot. At 100 you're disqualified and he keeps the prize money. Two holes so far: Widow's Pond, a par 3 over water, and Gator Alley, a 507-yard par 5 along a river."
+    ],
+    "controls": [
+      [
+        "Swing",
+        "Hold left mouse, pull back, push through"
+      ],
+      [
+        "Aim",
+        "Right-drag or A / D"
+      ],
+      [
+        "Change club",
+        "Wheel or W / S"
+      ],
+      [
+        "After-touch in flight",
+        "W A S D"
+      ],
+      [
+        "Foot wedge (with the card)",
+        "F"
+      ],
+      [
+        "Mulligan (with the card)",
+        "M"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "README",
+    "notesUrl": "https://github.com/ycgNem/bullshit-golf#readme",
+    "madeWith": "TypeScript and Three.js. Code written with Claude; the course, props and textures are generated by Python scripts run headless in Blender.",
+    "platforms": "Browser (desktop, mouse and keyboard)"
+  },
+  {
+    "id": "aldervale",
+    "title": "Aldervale",
+    "repo": "aldervale",
+    "play": "https://ycgnem.github.io/aldervale/",
+    "status": "prototype",
+    "version": "0.1",
+    "genre": "First-person farming",
+    "session": "Open-ended, saves in your browser",
+    "pitch": "Farm for the castle on the hill. Grow the crops, mill the flour, bake the bread, and fill the royal requisitions to turn a little plot into the finest farm in the valley.",
+    "number": "3 crops to start · requisitions pinned to the board",
+    "about": [
+      "High on the western hill stands Aldervale Castle, and its kitchens are always hungry. You're the steward of a small homestead below it. Hoe the plots, sow wheat, tomatoes and pumpkins, water them, and carry the harvest in your basket.",
+      "The castle's requests are pinned to the board: the Royal Kitchens, Head Cook Marigold and the Steward of Aldervale each want something. Fill a requisition and Pip the courier takes it up the hill for coin and Royal Favour.",
+      "Favour and coin go back into the farm: production buildings that mill and bake, and new fields to expand into. It's an early build with a first loop to try."
+    ],
+    "controls": [
+      [
+        "Walk / run",
+        "WASD / Shift"
+      ],
+      [
+        "Hoe, seeds, watering can, basket",
+        "1–4"
+      ],
+      [
+        "Switch seed",
+        "Q"
+      ],
+      [
+        "Use the tool",
+        "Click"
+      ],
+      [
+        "Talk, open, build",
+        "E"
+      ],
+      [
+        "Pause",
+        "Esc"
+      ]
+    ],
+    "notes": "source",
+    "notesUrl": "https://github.com/ycgNem/aldervale",
+    "madeWith": "TypeScript and Three.js. Code written with Claude Opus; every model built in Blender from Python scripts, and the textures generated by script.",
     "platforms": "Browser (desktop, mouse and keyboard)"
   },
   {

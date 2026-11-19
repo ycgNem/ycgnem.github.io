@@ -14,6 +14,9 @@ The home of ycgNem's games: free browser games built with AI and shown in the op
 | Pixel RTS | https://ycgnem.github.io/games/pixel-rts/ |
 | Foldworks | https://ycgnem.github.io/games/foldworks/ |
 | Stillframe | https://ycgnem.github.io/games/stillframe/ |
+| Deepwick | https://ycgnem.github.io/games/deepwick/ |
+| Bullshit Golf | https://ycgnem.github.io/games/bullshit-golf/ |
+| Aldervale | https://ycgnem.github.io/games/aldervale/ |
 | Dumpster Alchemy | https://ycgnem.github.io/games/dumpster-alchemy/ |
 | Nobody Mention the Moon | https://ycgnem.github.io/games/nobody-mention-the-moon/ |
 | The Mountain Is a Machine | https://ycgnem.github.io/games/the-mountain-is-a-machine/ |
