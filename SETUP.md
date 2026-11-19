@@ -1,11 +1,14 @@
 # Running the ycgNem site
 
-The site is plain HTML built by `build.py` (Python, no installs) from the `content/` folder.
+The site is plain HTML built by `build.py` (Python, no packages) from the `content/` folder.
+The moving parts (the home page screen, the cabinet filters, the `>_` search) are one small TypeScript script
+in `src/`, so you need [Node.js](https://nodejs.org) installed once. The .bat files do the rest.
 GitHub builds and publishes it on every push, and once a day so each game's "updated" date stays current.
 
 ## See it on your PC
 
 Double-click **`Preview site.bat`**. It builds the site and opens http://localhost:8090.
+By hand it's `npm install` once, then `npm run build`.
 
 ## Put it online (once, about 5 minutes)
 
@@ -52,16 +55,21 @@ Make the Discord invite **never expire** (Server Settings → Invites, or the in
    `released`, `playable` (shows as Early access), `playtest`, `prototype`, `indev`.
 2. Put screenshots in `assets/games/<id>/`: `cover.webp` (1280×720), `cover-640.webp` (640×360),
    and any number of `shot1.webp`, `shot2.webp`... They show up in the game page's gallery.
-3. Publish.
+3. Optional: run `py tools/accents.py`. It picks each game's accent colour from its cover and saves it in
+   `games.json` (needs Pillow: `pip install pillow`). A game without one uses amber.
+4. Publish.
+
+The NEW and UPDATED tags, the "updated" dates, the commit counts and the commit log all come from GitHub
+when the site builds. There is nothing to edit for them.
 
 ## Change what's featured on the home page
 
-The big switcher at the top of the home page is `spotlight` in `content/site.json`: one to four games, each with
+The screen at the top of the home page is `spotlight` in `content/site.json`: one to five games, each with
 the amber line under its title (`kicker`), the line on its tab (`short`), a 1280×720 screenshot (`image`) and where
 "What's new" goes (`link`). Put the newest update first.
 
-Below it, games sit on shelves by `status`: Released, Early access, In playtest, Prototypes. The game marked
-`"featured": true` gets the big card on its shelf.
+Below it, games sit on shelves by `status`: Released, Early access, In playtest, Prototypes, in the order they
+appear in `games.json`. Released games get the big cards and prototypes the small ones.
 
 ## Write a devlog post
 
@@ -88,6 +96,8 @@ Write here. ## for headings, - for lists, **bold**, [links](https://...), ![alt]
 | `content/games.json` | every game: text, status, controls, links |
 | `content/site.json` | socials, Discord, comments settings |
 | `content/devlog/` | devlog posts |
-| `assets/` | CSS, JS, logos, screenshots |
+| `assets/` | CSS, logos, screenshots |
+| `src/` | the site script, in TypeScript. `npm run build:js` bundles it to `assets/js/site.js` |
+| `tools/accents.py` | picks each game's accent colour from its cover |
 | `build.py` | turns all of that into `_site/` |
 | `.github/workflows/deploy.yml` | builds and publishes on GitHub |

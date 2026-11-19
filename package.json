@@ -1,0 +1,14 @@
+{
+  "name": "ycgnem-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build:js": "esbuild src/main.ts --bundle --minify --target=es2020 --outfile=assets/js/site.js",
+    "build": "npm run typecheck && npm run build:js && python build.py"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  }
+}

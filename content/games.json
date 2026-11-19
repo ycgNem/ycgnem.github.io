@@ -46,7 +46,8 @@
     "notesUrl": "https://github.com/ycgNem/sprocket-and-sprout/blob/main/PATCHNOTES.md",
     "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art made with PixelLab; sound made procedurally.",
     "platforms": "Browser (installable as an app), Windows installer",
-    "featured": true
+    "featured": true,
+    "accent": "#5ee8ad"
   },
   {
     "id": "overgrowth",
@@ -110,7 +111,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/overgrowth/blob/main/CHANGELOG.md",
     "madeWith": "JavaScript moving to TypeScript, and Three.js. Code written with Claude; surfaces and foliage generated with Flux, the hero models built in Blender from Python scripts, and the sound synthesized live.",
-    "platforms": "Browser (desktop, keyboard and mouse; partial gamepad)"
+    "platforms": "Browser (desktop, keyboard and mouse; partial gamepad)",
+    "accent": "#e59c61"
   },
   {
     "id": "arcwarm",
@@ -157,7 +159,8 @@
     "notes": "plan",
     "notesUrl": "https://github.com/ycgNem/arcwarm/blob/main/PLAN.md",
     "madeWith": "JavaScript and Three.js. Code written with Claude Opus from my design notes.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e59861"
   },
   {
     "id": "verdant-relay",
@@ -212,7 +215,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/verdant-relay/blob/main/PATCH_NOTES.md",
     "madeWith": "JavaScript moving to TypeScript, and Three.js, rendered as pixel art. Code written with Claude Opus from my design docs; every sprite drawn pixel by pixel by Claude in build scripts.",
-    "platforms": "Browser (desktop, keyboard and mouse)"
+    "platforms": "Browser (desktop, keyboard and mouse)",
+    "accent": "#e59c61"
   },
   {
     "id": "fins-and-fronds",
@@ -271,7 +275,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/fins-and-fronds/blob/master/CHANGELOG.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs and aquarium research; pixel art from PixelLab, and the sound synthesized.",
-    "platforms": "Browser (mouse; touch works too)"
+    "platforms": "Browser (mouse; touch works too)",
+    "accent": "#61e5d6"
   },
   {
     "id": "pixel-rts",
@@ -318,7 +323,8 @@
     "notes": "plan",
     "notesUrl": "https://github.com/ycgNem/pixel-rts/blob/main/docs/PLAN.md",
     "madeWith": "TypeScript and Canvas 2D, no engine; online play is peer to peer over WebRTC. Code written with Claude Opus from my design docs; pixel art from PixelLab.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e5bc61"
   },
   {
     "id": "foldworks",
@@ -377,7 +383,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/foldworks/blob/main/docs/patch-notes.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus pieces Claude draws pixel by pixel in scripts, and the sound made procedurally.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#6197e5"
   },
   {
     "id": "stillframe",
@@ -491,58 +498,8 @@
     "notes": "source",
     "notesUrl": "https://github.com/ycgNem/deepwick",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; pixel art from PixelLab, packed into sprite sheets by script.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
-  },
-  {
-    "id": "bullshit-golf",
-    "title": "Bullshit Golf",
-    "repo": "bullshit-golf",
-    "play": "https://ycgnem.github.io/bullshit-golf/",
-    "status": "prototype",
-    "version": "0.1",
-    "genre": "3D golf where you cheat",
-    "session": "Two holes, a few minutes a round",
-    "pitch": "The golf is played straight: real ball flight and a swing you make with the mouse. Then you cheat. Bend the ball in mid-air while the course marshal isn't looking.",
-    "number": "2 holes · 100 suspicion and you're disqualified",
-    "about": [
-      "The golf is real: drag and lift on the ball, turf that bounces and checks, greens that break, and a swing you make with the mouse. Pull back, push through, and a launch monitor judges your path, contact and tempo. Swing out to the right and it draws; snatch it and you thin it.",
-      "Then you cheat. Hold a key while the ball is in the air and time slows while you put spin on a ball you've already hit. Before every hole your caddie offers three cheat cards: a cup three times wider, sprinklers on the green, a golf cart parked behind the pin.",
-      "The marshal's eye is in the corner. Cheat while he's looking away and it costs a little suspicion. Cheat while he's watching and it costs a lot. At 100 you're disqualified and he keeps the prize money. Two holes so far: Widow's Pond, a par 3 over water, and Gator Alley, a 507-yard par 5 along a river."
-    ],
-    "controls": [
-      [
-        "Swing",
-        "Hold left mouse, pull back, push through"
-      ],
-      [
-        "Aim",
-        "Right-drag or A / D"
-      ],
-      [
-        "Change club",
-        "Wheel or W / S"
-      ],
-      [
-        "After-touch in flight",
-        "W A S D"
-      ],
-      [
-        "Foot wedge (with the card)",
-        "F"
-      ],
-      [
-        "Mulligan (with the card)",
-        "M"
-      ],
-      [
-        "Pause",
-        "Esc"
-      ]
-    ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/bullshit-golf#readme",
-    "madeWith": "TypeScript and Three.js. Code written with Claude; the course, props and textures are generated by Python scripts run headless in Blender.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e58a61"
   },
   {
     "id": "aldervale",
@@ -589,7 +546,8 @@
     "notes": "source",
     "notesUrl": "https://github.com/ycgNem/aldervale",
     "madeWith": "TypeScript and Three.js. Code written with Claude Opus; every model built in Blender from Python scripts, and the textures generated by script.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#99e561"
   },
   {
     "id": "dumpster-alchemy",
@@ -636,7 +594,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/dumpster-alchemy/blob/main/CHANGELOG.md",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; pixel art drafted with PixelLab and finished by script, and every sound synthesized.",
-    "platforms": "Browser (mouse or touch; phones in landscape)"
+    "platforms": "Browser (mouse or touch; phones in landscape)",
+    "accent": "#e59761"
   },
   {
     "id": "nobody-mention-the-moon",
@@ -691,7 +650,8 @@
     "notes": "milestones",
     "notesUrl": "https://github.com/ycgNem/nobody-mention-the-moon/blob/main/docs/MILESTONES.md",
     "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus; every 3D model built by Blender Python scripts, with Colyseus for online play and on-device word spotting for the trigger words.",
-    "platforms": "Browser (desktop, mouse and keyboard; solo for now)"
+    "platforms": "Browser (desktop, mouse and keyboard; solo for now)",
+    "accent": "#e5ab61"
   },
   {
     "id": "the-mountain-is-a-machine",
@@ -750,7 +710,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/the-mountain-is-a-machine/blob/main/PATCHNOTES.md",
     "madeWith": "TypeScript, no engine. Code written with Claude Opus; pixel art from PixelLab, built into one atlas by script.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#6190e5"
   },
   {
     "id": "last-lighthouse",
@@ -809,7 +770,8 @@
     "notes": "milestones",
     "notesUrl": "https://github.com/ycgNem/last-lighthouse/blob/main/docs/MILESTONES.md",
     "madeWith": "TypeScript and Three.js. Code written with Claude Opus; the 3D models are built by Blender scripts and exported as glTF.",
-    "platforms": "Browser (desktop, Chrome or Edge, mouse and keyboard)"
+    "platforms": "Browser (desktop, Chrome or Edge, mouse and keyboard)",
+    "accent": "#61b4e5"
   },
   {
     "id": "goblin-pension-plan",
@@ -868,7 +830,8 @@
     "notes": "milestones",
     "notesUrl": "https://github.com/ycgNem/goblin-pension-plan/blob/main/docs/MILESTONES.md",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; most of the pixel art from PixelLab, with code-drawn art as the fallback.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e59361"
   },
   {
     "id": "floor-zero",
@@ -903,7 +866,8 @@
     "notes": "roadmap",
     "notesUrl": "https://github.com/ycgNem/floor-zero/blob/main/docs/10-roadmap.md",
     "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus from my design docs; surface textures made by script.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e59861"
   },
   {
     "id": "formica",
@@ -958,7 +922,8 @@
     "notes": "roadmap",
     "notesUrl": "https://github.com/ycgNem/formica/blob/main/ROADMAP.md",
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus from real ant biology; pixel art from PixelLab, and the sound synthesized.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#e59d61"
   },
   {
     "id": "ember",
@@ -1013,7 +978,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/ember/blob/main/PATCH_NOTES.md",
     "madeWith": "TypeScript and WebGL2, no engine. Code written with Claude Opus; mutation icons from PixelLab, the glow from a post-processing pipeline, and the music and sound synthesized.",
-    "platforms": "Browser (mouse and keyboard; touch works too)"
+    "platforms": "Browser (mouse and keyboard; touch works too)",
+    "accent": "#54b4f2"
   },
   {
     "id": "last-watt",
@@ -1060,7 +1026,8 @@
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/last-watt#readme",
     "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#618be5"
   },
   {
     "id": "slipstream-salvager",
@@ -1098,7 +1065,8 @@
     "notes": "patch notes",
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
     "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser, Windows"
+    "platforms": "Browser, Windows",
+    "accent": "#d161e5"
   },
   {
     "id": "slipstream-salvager-3d",
@@ -1144,7 +1112,8 @@
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
     "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Opus from my design docs.",
-    "platforms": "Browser, Windows"
+    "platforms": "Browser, Windows",
+    "accent": "#e8b85f"
   },
   {
     "id": "smeltdown",
@@ -1187,6 +1156,7 @@
     "notes": "README",
     "notesUrl": "https://github.com/ycgNem/smeltdown#readme",
     "madeWith": "TypeScript and the DOM, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus icons and backdrops Claude draws pixel by pixel in scripts, and the sound synthesized.",
-    "platforms": "Browser (desktop, mouse and keyboard)"
+    "platforms": "Browser (desktop, mouse and keyboard)",
+    "accent": "#6176e5"
   }
 ]

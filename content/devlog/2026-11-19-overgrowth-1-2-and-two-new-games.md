@@ -1,12 +1,12 @@
 ---
-title: "Overgrowth 1.2, Fins & Fronds 0.3, and three new games"
+title: "Overgrowth 1.2, Fins & Fronds 0.3, and two new games"
 date: 2026-11-19
-summary: Overgrowth got three releases in a week, Fins & Fronds got an ending, and Deepwick, Bullshit Golf and Aldervale are up as prototypes.
+summary: Overgrowth got three releases in a week, Fins & Fronds got an ending, and Deepwick and Aldervale are up as prototypes.
 cover: /assets/games/deepwick/cover.webp
 game: overgrowth
 ---
 
-Two games got big updates and three new prototypes are up.
+Two games got big updates and two new prototypes are up.
 
 ## Overgrowth 1.1, 1.2 and 1.2.1
 
@@ -38,14 +38,8 @@ Two games got big updates and three new prototypes are up.
 
 ![Deepwick: day 1 in the meadow, bare hands](/assets/games/deepwick/shot1.webp)
 
-## New: Bullshit Golf
-
-[Bullshit Golf](/games/bullshit-golf/) plays the golf straight, with real ball flight and a mouse swing, then lets you cheat. Bend the ball in mid-air, take a cheat card from your caddie, and keep an eye on the course marshal. At 100 suspicion you're disqualified. Two holes so far.
-
-![Bullshit Golf: the seventh tee, with the Big Cup card in play](/assets/games/bullshit-golf/shot1.webp)
-
 ## New: Aldervale
 
 [Aldervale](/games/aldervale/) is a first-person farm below a castle. Grow wheat, tomatoes and pumpkins, fill the royal requisitions pinned to the board, and earn coin and Royal Favour. It's an early build.
 
-All three new games are on the Prototypes shelf.
+Both new games are on the Prototypes shelf.

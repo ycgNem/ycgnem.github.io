@@ -3,7 +3,7 @@
   "url": "https://ycgnem.github.io",
   "tagline": "Play it now. See how it's made.",
   "description": "ycgNem makes free browser games with AI and shows the whole process: every repo public, every number on screen, every patch noted.",
-  "_spotlight_help": "The big switcher at the top of the home page, 1 to 4 games. game = an id from games.json; kicker = the amber line under the title; short = the line on its tab; image = a 1280x720 screenshot; link = where 'What's new' goes.",
+  "_spotlight_help": "The big switcher at the top of the home page, 1 to 5 games. game = an id from games.json; kicker = the amber line under the title; short = the line on its tab; image = a 1280x720 screenshot; link = where 'What's new' goes.",
   "spotlight": [
     {
       "game": "fins-and-fronds",
@@ -24,7 +24,7 @@
       "kicker": "1.2: Hold Fast",
       "short": "1.2.1 is out",
       "image": "/assets/games/overgrowth/shot6.webp",
-      "link": "/devlog/overgrowth-1-2-and-three-new-games/"
+      "link": "/devlog/overgrowth-1-2-and-two-new-games/"
     },
     {
       "game": "sprocket-and-sprout",
@@ -32,6 +32,13 @@
       "short": "A merchant ship calls",
       "image": "/assets/games/sprocket-and-sprout/cover.webp",
       "link": "/devlog/sprocket-2-1/"
+    },
+    {
+      "game": "deepwick",
+      "kicker": "New prototype",
+      "short": "New: dig five layers down",
+      "image": "/assets/games/deepwick/cover.webp",
+      "link": "/devlog/overgrowth-1-2-and-two-new-games/"
     }
   ],
   "_socials_help": "Paste each profile URL once the account exists. Empty ones are hidden on the site.",
