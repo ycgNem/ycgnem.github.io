@@ -1,6 +1,6 @@
 # ycgnem.github.io
 
-The home of ycgNem's games: free browser games built with AI and shown in the open.
+The home of ycgNem's games: free browser games, built in the open.
 
 **Visit: https://ycgnem.github.io**
 

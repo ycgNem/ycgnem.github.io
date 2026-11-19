@@ -49,7 +49,7 @@ SHELVES = [
 PROMISES = [
     ("Free in your browser", "Every game is free to play in your browser."),
     ("Public code", "Every repo is public."),
-    ("Honest about AI", "I'll always say what the AI did."),
+    ("How it's made", "Every game page says how it was built."),
     ("Patch notes", "Every update gets patch notes."),
     ("A reply", "If you leave feedback, you get a reply."),
 ]
@@ -328,7 +328,7 @@ def layout(path, title, desc, body, image="/assets/brand/og-image.png", kind="we
       <div><h2>Read</h2><a href="/devlog/">Devlog</a><a href="/about/">How it's made</a><a href="/feed.xml">RSS</a></div>
       <div><h2>Follow</h2><a href="/community/">Community</a>{foot_social}</div>
     </nav>
-    <p class="foot-legal">Built with Claude. Free games, public code, no ads, no trackers. © <span data-year>{TODAY.year}</span> ycgNem</p>
+    <p class="foot-legal">Free games, public code, no ads, no trackers. © <span data-year>{TODAY.year}</span> ycgNem</p>
   </div>
 </footer>
 <dialog class="palette" data-palette aria-label="Search games and posts">
@@ -467,7 +467,7 @@ def stats_strip():
         nums.append((nice_date(max(ups), year=False), "latest update"))
     return f"""<section class="strip">
   <div class="wrap strip-in">
-    <h1>Free browser games, built with AI, <em>shown in the open.</em></h1>
+    <h1>Free browser games, <em>built in the open.</em></h1>
     <ul class="nums">{"".join(f'<li><b>{a}</b><span>{b}</span></li>' for a, b in nums)}</ul>
   </div>
 </section>"""
@@ -558,7 +558,7 @@ def page_index(posts):
   <div class="wrap">
     <header class="band-head">
       <div><p class="eyebrow">The deal</p><h2>Five promises</h2>
-        <p class="band-sub">I make these with AI and I won't hide it. Here's what you get in return.</p></div>
+        <p class="band-sub">What you can count on from every game here.</p></div>
       <a class="btn btn-ghost btn-sm" href="/about/">How it's made</a>
     </header>
     {promises()}
@@ -734,13 +734,13 @@ def page_about():
 <div class="wrap">
   <header class="page-head">
     <p class="eyebrow">How it's made</p>
-    <h1>A gamer, with AI on the crew</h1>
-    <p class="lede">I'm ycgNem. I've played games my whole life, and this year I started making them. I build with AI and I'm not going to hide that. Here's what it actually means.</p>
+    <h1>A gamer who started making games</h1>
+    <p class="lede">I'm ycgNem. I've played games my whole life, and this year I started making them. Here's how they get made.</p>
   </header>
   <section class="band about-who">
     <div class="split">
       <div class="panel"><p class="panel-n">01</p><h2>I decide what the game is</h2><p>Every game starts as a design doc: the loop, the numbers, what should feel good. I write what I want and why.</p></div>
-      <div class="panel"><p class="panel-n">02</p><h2>Claude writes most of the code</h2><p>It works in milestones from those docs. I play every build, decide what stays, and send it back when something feels wrong.</p></div>
+      <div class="panel"><p class="panel-n">02</p><h2>The code is built in milestones</h2><p>Claude, an AI model, writes most of it from those docs, one milestone at a time. I play every build, decide what stays, and send it back when something feels wrong.</p></div>
       <div class="panel"><p class="panel-n">03</p><h2>Art is a mix</h2><p>Some sprites come from PixelLab, an AI pixel-art tool. Some are drawn pixel by pixel by Claude in a script. The 3D games use models built by Blender scripts. Each game page says which.</p></div>
       <div class="panel"><p class="panel-n">04</p><h2>The numbers are mine to own</h2><p>If a tower does 6 kJ/s, that number is on screen, and I can tell you why it's that number.</p></div>
     </div>
@@ -763,7 +763,7 @@ def page_about():
   </section>
 </div>
 {join_band()}"""
-    return layout("/about/", "How it's made", "How ycgNem builds games with AI: who does what, five promises, and the receipts.", body, page="about")
+    return layout("/about/", "How it's made", "How ycgNem's games get made: who does what, five promises, and the receipts.", body, page="about")
 
 
 def page_community():
