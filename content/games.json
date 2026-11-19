@@ -598,62 +598,6 @@
     "accent": "#e59761"
   },
   {
-    "id": "nobody-mention-the-moon",
-    "title": "Nobody Mention the Moon",
-    "repo": "nobody-mention-the-moon",
-    "play": "https://ycgnem.github.io/nobody-mention-the-moon/",
-    "status": "prototype",
-    "version": "M8",
-    "genre": "Co-op dinner party",
-    "session": "One dinner, about 15 minutes",
-    "pitch": "Cater a dinner party where every guest is a monster pretending to be human, and they all think you're a legendary monster too. Whatever you do, don't say \"moon\" near the werewolf.",
-    "number": "8 monster types · 3 houses · 1–6 hosts",
-    "about": [
-      "You and your friends are the only humans in the house. The guests are monsters in disguise, and every one of them thinks you're a legendary monster too. Cook the courses, seat the guests, and steer the small talk without blowing your cover. You don't know who the vampire is until somebody serves the garlic bread.",
-      "Your voice is a controller: some words set guests off, and saying one within earshot counts, meant or not. Lies become house rules, so tell the ghost you don't do mirrors either and nobody on your team can go near the bathroom. If you're found out, it isn't a game-over screen. It's a chase to the van.",
-      "Three houses, 8 monster types, 7 occasions and 10 events are built. The web version is solo only for now: online dinners for up to 6 need a game server that isn't hosted yet, and the multiplayer still needs real playtests with friends."
-    ],
-    "controls": [
-      [
-        "Move / look",
-        "WASD / mouse"
-      ],
-      [
-        "Use, pick up / drop",
-        "E / Q"
-      ],
-      [
-        "Throw",
-        "Hold click"
-      ],
-      [
-        "Small Talk",
-        "Right-click or 1–3"
-      ],
-      [
-        "Seat a guest",
-        "G"
-      ],
-      [
-        "Talk / say by text",
-        "V / Enter"
-      ],
-      [
-        "Rumor Ledger",
-        "Tab"
-      ],
-      [
-        "Overhead view",
-        "O"
-      ]
-    ],
-    "notes": "milestones",
-    "notesUrl": "https://github.com/ycgNem/nobody-mention-the-moon/blob/main/docs/MILESTONES.md",
-    "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus; every 3D model built by Blender Python scripts, with Colyseus for online play and on-device word spotting for the trigger words.",
-    "platforms": "Browser (desktop, mouse and keyboard; solo for now)",
-    "accent": "#e5ab61"
-  },
-  {
     "id": "the-mountain-is-a-machine",
     "title": "The Mountain Is a Machine",
     "repo": "the-mountain-is-a-machine",
@@ -714,66 +658,6 @@
     "accent": "#6190e5"
   },
   {
-    "id": "last-lighthouse",
-    "title": "The Last Lighthouse",
-    "repo": "last-lighthouse",
-    "play": "https://ycgnem.github.io/last-lighthouse/",
-    "status": "prototype",
-    "version": "Chapter 1",
-    "genre": "First-person action RPG",
-    "session": "Chapter 1, saves in your browser",
-    "pitch": "Keep the last lighthouse in a drowned world. Hook wreckage out of the tide, rebuild the settlement plot by plot, and carry the light out to the wrecks.",
-    "number": "Chapter 1 playable start to finish",
-    "about": [
-      "The sea rose, the great lights hold back the Gloom, and this one is failing. You're its new keeper. The tide brings wreckage into the cove: plank bundles, oil drums, kelp mats, now and then a ship's crate. Throw the salvage hook and reel it in, and at low water tear pieces off the bared wreck field.",
-      "Every ruin has a board. Hand in materials and watch it rise: the forge first, then the jetty and the boat, then the cottages, the net loft and the smokehouse. Fish off the rocks, grill at the hearth, and use build mode to fill the rest with lanterns, fences and benches.",
-      "Restore the lamp and its beam finds the Wreck of the Meridian on a reef, then Saltmere Beacon on a sea stack, where the Wreck Guardian waits. Lose a fight and the tide carries you home, minus 40% of what you were carrying."
-    ],
-    "controls": [
-      [
-        "Move / look",
-        "WASD / mouse"
-      ],
-      [
-        "Jump / dash",
-        "Space / Shift"
-      ],
-      [
-        "Bolt-caster",
-        "Left mouse"
-      ],
-      [
-        "Salvage hook",
-        "Right mouse"
-      ],
-      [
-        "Lantern Flare",
-        "Q"
-      ],
-      [
-        "Interact",
-        "E"
-      ],
-      [
-        "Build mode",
-        "B"
-      ],
-      [
-        "Eat / cycle food",
-        "F / Z"
-      ],
-      [
-        "Journal / pause",
-        "Tab / Esc"
-      ]
-    ],
-    "notes": "milestones",
-    "notesUrl": "https://github.com/ycgNem/last-lighthouse/blob/main/docs/MILESTONES.md",
-    "madeWith": "TypeScript and Three.js. Code written with Claude Opus; the 3D models are built by Blender scripts and exported as glTF.",
-    "platforms": "Browser (desktop, Chrome or Edge, mouse and keyboard)",
-    "accent": "#61b4e5"
-  },
-  {
     "id": "goblin-pension-plan",
     "title": "Goblin Pension Plan",
     "repo": "goblin-pension-plan",
@@ -832,42 +716,6 @@
     "madeWith": "TypeScript and Canvas 2D, no engine. Code written with Claude Opus; most of the pixel art from PixelLab, with code-drawn art as the fallback.",
     "platforms": "Browser (desktop, mouse and keyboard)",
     "accent": "#e59361"
-  },
-  {
-    "id": "floor-zero",
-    "title": "Floor Zero",
-    "repo": "floor-zero",
-    "play": "https://ycgnem.github.io/floor-zero/",
-    "status": "prototype",
-    "version": "M8",
-    "genre": "First-person delving game",
-    "session": "Chapter 1, saves in your browser",
-    "pitch": "Move to a town on the rim of an impossible shaft and make a living from the dungeon below: mine, fish, forage and fight, and restore the old lifts that lead deeper.",
-    "number": "milestones 0–8 built · chapter 1 playable",
-    "about": [
-      "You move to Bellwether, a town clinging to the rim of an ancient shaft, and apply for a delver's license. Make your living from the dungeon below by mining, fishing, foraging and fighting, with skills that level by doing.",
-      "The dungeon isn't random. It's a place you learn: the good fishing pool, the corridor with the nasty projectile enemies, the mineral your pickaxe can't touch yet. Restore the old lift network and the long walk down becomes your commute.",
-      "Chapter 1 plays from the license test to the deep-lift ceremony. The latest update adds daily conditions on the noticeboard, Town Works projects that change the plaza overnight, new rescues and repairs, and an art overhaul."
-    ],
-    "controls": [
-      [
-        "Move / look",
-        "WASD / mouse"
-      ],
-      [
-        "Interact",
-        "E"
-      ],
-      [
-        "Pause",
-        "Esc"
-      ]
-    ],
-    "notes": "roadmap",
-    "notesUrl": "https://github.com/ycgNem/floor-zero/blob/main/docs/10-roadmap.md",
-    "madeWith": "TypeScript, Three.js and Rapier physics. Code written with Claude Opus from my design docs; surface textures made by script.",
-    "platforms": "Browser (desktop, mouse and keyboard)",
-    "accent": "#e59861"
   },
   {
     "id": "formica",
@@ -1028,92 +876,6 @@
     "madeWith": "TypeScript and Canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
     "platforms": "Browser (desktop, mouse and keyboard)",
     "accent": "#618be5"
-  },
-  {
-    "id": "slipstream-salvager",
-    "title": "Slipstream Salvager",
-    "repo": "slipstream-salvager",
-    "play": "https://ycgnem.github.io/slipstream-salvager/",
-    "status": "prototype",
-    "version": "0.3",
-    "genre": "Top-down action roguelike",
-    "session": "About 15 minutes a run",
-    "pitch": "A small, fast scrap robot rips parts off enemies at full speed and bolts them onto itself. Your movement is your weapon.",
-    "number": "only full-speed hits do damage",
-    "about": [
-      "Six yards, about fifteen minutes, ending in a boss, The Compactor, that you take apart one move at a time. Only a hit at full speed does damage, and every part you tear off and bolt on changes how you move and attack: a Booster's Burn, Grip Treads that power-slide, Jump Jets, Springs, a Plow, Jaws.",
-      "You pick your route by driving out through exit gates whose signs show what you can salvage there. Three chassis to unlock by playing, two run modifiers, and a daily run with one seed a day that is the same for everyone."
-    ],
-    "controls": [
-      [
-        "Steer",
-        "WASD / arrows"
-      ],
-      [
-        "Rip (hold with a Booster)",
-        "Space / J"
-      ],
-      [
-        "Bolt on",
-        "E / K"
-      ],
-      [
-        "Pause",
-        "Esc"
-      ]
-    ],
-    "notes": "patch notes",
-    "notesUrl": "https://github.com/ycgNem/slipstream-salvager/blob/main/CHANGELOG.md",
-    "madeWith": "TypeScript and one HTML canvas, no engine. Code written with Claude Opus from my design docs; pixel art from PixelLab plus sprites Claude draws pixel by pixel in code.",
-    "platforms": "Browser, Windows",
-    "accent": "#d161e5"
-  },
-  {
-    "id": "slipstream-salvager-3d",
-    "title": "Slipstream Salvager 3D",
-    "repo": "slipstream-salvager-3d",
-    "play": "https://ycgnem.github.io/slipstream-salvager-3d/",
-    "status": "prototype",
-    "version": "0.2",
-    "genre": "First-person action roguelike",
-    "session": "A run of five yards",
-    "pitch": "The same rules as Slipstream Salvager, seen from inside the little scrap robot. Speed is the weapon, and here you feel it.",
-    "number": "claw glows teal = full speed",
-    "about": [
-      "The first-person version of Slipstream Salvager. Same rules, same scrapyards, same Rammers and Snappers. Only a hit at full speed (the claw glows teal) does damage. Hit an enemy where its part sits to tear it off, tow it behind you, bolt it on, and you move the way it did.",
-      "A Rammer's Booster turns your attack into its charge, a Snapper's Grip Treads let you power-slide round, a Plow makes your front a ram, Jaws bite on and sling you back out. Clear a yard, then drive out through the exit whose sign shows the part you want."
-    ],
-    "controls": [
-      [
-        "Steer",
-        "Mouse or A/D (click the view first)"
-      ],
-      [
-        "Thrust / brake",
-        "W / S"
-      ],
-      [
-        "Rip",
-        "Click or Space"
-      ],
-      [
-        "Bolt on",
-        "E"
-      ],
-      [
-        "Look back",
-        "Q"
-      ],
-      [
-        "Gamepad",
-        "Supported"
-      ]
-    ],
-    "notes": "README",
-    "notesUrl": "https://github.com/ycgNem/slipstream-salvager-3d#readme",
-    "madeWith": "TypeScript and Three.js. Code and low-poly models built with Claude Opus from my design docs.",
-    "platforms": "Browser, Windows",
-    "accent": "#e8b85f"
   },
   {
     "id": "smeltdown",

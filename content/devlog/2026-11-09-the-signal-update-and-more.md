@@ -1,12 +1,12 @@
 ---
-title: "Verdant Relay gets an ending, Ember 1.0, and two new games"
+title: "Verdant Relay gets an ending, Ember 1.0, and a new game"
 date: 2026-11-09
-summary: Verdant Relay's signal update, Ember 1.0, the Foldworks Playability Update, Goblin Pension Plan's Chapter Two, plus Dumpster Alchemy and Nobody Mention the Moon.
+summary: Verdant Relay's signal update, Ember 1.0, the Foldworks Playability Update, Goblin Pension Plan's Chapter Two, plus a new game, Dumpster Alchemy.
 cover: /assets/games/dumpster-alchemy/shot1.webp
 game: verdant-relay
 ---
 
-A big week. Four games got major updates and two new ones are up.
+A big week. Four games got major updates and a new one is up.
 
 ## Verdant Relay: the signal update
 
@@ -40,8 +40,4 @@ Your Research and unlocks carry over, but a run saved before the update can't co
 
 ![Dumpster Alchemy: night 1 at Lot 9](/assets/games/dumpster-alchemy/shot1.webp)
 
-## New: Nobody Mention the Moon
-
-[Nobody Mention the Moon](/games/nobody-mention-the-moon/) is a co-op dinner party for up to 6. Every guest is a monster pretending to be human, and they all think you're one too. Your voice counts: say "moon" near the werewolf and you'll find out why it's the title. The web version is solo only for now, because online dinners need a game server that isn't hosted yet.
-
-Both new games are on the Prototypes shelf.
+It's on the Prototypes shelf.

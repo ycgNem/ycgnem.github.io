@@ -17,16 +17,11 @@ The home of ycgNem's games: free browser games, built in the open.
 | Deepwick | https://ycgnem.github.io/games/deepwick/ |
 | Aldervale | https://ycgnem.github.io/games/aldervale/ |
 | Dumpster Alchemy | https://ycgnem.github.io/games/dumpster-alchemy/ |
-| Nobody Mention the Moon | https://ycgnem.github.io/games/nobody-mention-the-moon/ |
 | The Mountain Is a Machine | https://ycgnem.github.io/games/the-mountain-is-a-machine/ |
-| The Last Lighthouse | https://ycgnem.github.io/games/last-lighthouse/ |
 | Goblin Pension Plan | https://ycgnem.github.io/games/goblin-pension-plan/ |
-| Floor Zero | https://ycgnem.github.io/games/floor-zero/ |
 | Formica | https://ycgnem.github.io/games/formica/ |
 | Ember | https://ycgnem.github.io/games/ember/ |
 | Last Watt | https://ycgnem.github.io/games/last-watt/ |
-| Slipstream Salvager | https://ycgnem.github.io/games/slipstream-salvager/ |
-| Slipstream Salvager 3D | https://ycgnem.github.io/games/slipstream-salvager-3d/ |
 | Smeltdown | https://ycgnem.github.io/games/smeltdown/ |
 
 The site is static HTML built by `build.py` from `content/`, plus a small TypeScript script in `src/`. See [SETUP.md](SETUP.md) to run or edit it.
